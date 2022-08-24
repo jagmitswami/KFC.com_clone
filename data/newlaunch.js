@@ -1,0 +1,167 @@
+export default [
+	{
+		image:
+			" https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002102.jpg?ver=19.25",
+		title: "Buddy Popcorn Nachos Meal",
+		desc: "Two ka crunch, in one munch- for 2! Combo of 2 new Popcorn Nachos & a Pepsi PET",
+		mrp: "",
+		price: 399,
+		type: "Non veg",
+		serve: "Serves 2",
+		id: "4f8d858f-01e1-4f07-9618-6d9af596a5e5",
+	},
+	{
+		image:
+			" https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002153.jpg?ver=19.25\t",
+		title: "Peri Peri 10 Strips with Dynamite",
+		desc: "10 Spicy Peri Peri chicken strips & our Dynamite Spicy Mayo Sauce Bottle",
+		mrp: "",
+		price: 639.05,
+		type: "Non veg",
+		serve: "Serves 2-3",
+		id: "818fb8b3-824b-47etest_imaged-956e-94dd9d744c14",
+	},
+	{
+		image:
+			" https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002103.jpg?ver=19.25",
+		title: "Popcorn Nachos & Wings Combo",
+		desc: "New Popcorn Nachos, 3pc Wings & 1 Pepsi PET in this delightful snack combo!",
+		mrp: "",
+		price: 349,
+		type: "Non veg",
+		serve: "Serves 1-2",
+		id: "41977483-0187-476e-b807-291e48a5ab90",
+	},
+	{
+		image:
+			" https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002154.jpg?ver=19.25\t",
+		title: "Peri Peri 10 Strips with Nashville",
+		desc: "10 Spicy Peri Peri chicken strips & our Nashville Hot Sauce Bottle",
+		mrp: "",
+		price: 639.05,
+		type: "Non veg",
+		serve: "Serves 2-3",
+		id: "ebf179b4-0117-49ba-aede-abbfa676341d",
+	},
+	{
+		image:
+			" https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K664.jpg?ver=19.25",
+		title: "Popcorn Nachos",
+		desc: "Crunchy popcorn & 2 delicious sauces paired with masala Doritos. 2 ka crunch, in 1 munch!",
+		mrp: "",
+		price: 169,
+		type: "Non veg",
+		serve: "",
+		id: "e6fb0fetest_imaged-8135-4e3e-8810-ffebdd08e464",
+	},
+	{
+		image:
+			" https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002155.jpg?ver=19.25",
+		title: "Peri Peri 10 Strips with Nashville",
+		desc: "Leg before any wicket! Save 27% on 10 Spicy Peri Peri Leg Pieces & 4 Dips",
+		mrp: "",
+		price: 924.76,
+		type: "Non veg",
+		serve: "Serves 3-4",
+		id: "3fc9ee33-e996-4654-a890-d7baa08ccaae",
+	},
+	{
+		image:
+			" https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002156.jpg?ver=19.25\t",
+		title: "Peri Peri 5 Leg Pc Meal",
+		desc: "5 Spicy Peri Peri Leg Pieces, 2 Dips, 1 Med Fries & a Pepsi PET",
+		mrp: "",
+		price: 628.57,
+		type: "Non veg",
+		serve: "Serves 2",
+		id: "fb720f0b-d458-4e36-8de5-3d8c6bb7dcd4",
+	},
+	{
+		image:
+			" https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002157.jpg?ver=19.25\t",
+		title: "Peri Peri 5 Leg Pc & 2 Dips",
+		desc: "5 Spicy Peri Peri Leg Pieces, paired with 2 delicous dips",
+		mrp: "",
+		price: 515.24,
+		type: "Non veg",
+		serve: "Serves 2",
+		id: "3e7a7e20-e280-4691-9628-954e2e794787",
+	},
+	{
+		image:
+			" https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002093.jpg?ver=19.25\t",
+		title: "6pc Hot & Crispy with Dynamite Sauce",
+		desc: "6pc Hot & Crispy Chicken paired with our new Dynamite Spicy Mayo Sauce Bottle",
+		mrp: "",
+		price: 779.05,
+		type: "Non veg",
+		serve: "Serves 3",
+		id: "36141953-f691-4b3test_imaged-8392-4e7d41dd830d",
+	},
+	{
+		image:
+			" https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002158.jpg?ver=19.25\t",
+		title: "Peri Peri 6pc Chicken Strips",
+		desc: "6 Spicy Peri Peri chicken strips",
+		mrp: "",
+		price: 279.05,
+		type: "Non veg",
+		serve: "Serves 2",
+		id: "fc624c4test_imaged-b739-47e0-9a1a-91d68b547a93",
+	},
+	{
+		image:
+			" https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002094.jpg?ver=19.25\t",
+		title: "6pc Hot & Crispy with Nashville Sauce",
+		desc: "6pc Hot & Crispy Chicken paired with our new Nashville Hot Pepper Sauce Bottle",
+		mrp: "",
+		price: 779.05,
+		type: "Non veg",
+		serve: "Serves 2",
+		id: "427e5715-f589-4cbb-a7ae-678e130c5d3f",
+	},
+	{
+		image:
+			" https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002164.jpg?ver=19.25",
+		title: "Solo Feast",
+		desc: "Treat yourself with 1 Hot & Crispy, 2 Strips, 2 Wings, 1 Buttered Bun, 1 Dip & Pepsi PET",
+		mrp: "",
+		price: 399.05,
+		type: "Non veg",
+		serve: "Serves 2",
+		id: "24d39b66-e442-4376-9617-9068141b3a62",
+	},
+	{
+		image:
+			" https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002165.jpg?ver=19.25\t",
+		title: "Strips & Rice Combo",
+		desc: "4 strips, 1 Dips, flavorful Rice & Gravy at a deal price",
+		mrp: "",
+		price: 359.06,
+		type: "Non veg",
+		serve: "Serves 2",
+		id: "87981d85-85d9-4f47-a359-6a8b2a9379a0",
+	},
+	{
+		image:
+			" https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002172.jpg?ver=19.25",
+		title: "Friendship Bucket with Dynamite Sauce",
+		desc: "3pc Hot & Crispy, 3 Wings, 3 Strips, Large Popcorn & our new Dynamite Mayo Bottle",
+		mrp: "",
+		price: 879.05,
+		type: "Non veg",
+		serve: "Serves 3-4",
+		id: "10027963-0c3b-438f-a537-79b0922db369",
+	},
+	{
+		image:
+			" https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002172.jpg?ver=19.25",
+		title: "Friendship Bucket with Nashville Sauce",
+		desc: "3pc Hot & Crispy, 3 Wings, 3 Strips, Large Popcorn & our new Dynamite Mayo Bottle",
+		mrp: "",
+		price: 879.05,
+		type: "Non veg",
+		serve: "Serves 3-4",
+		id: "5c7c88d8-2f02-4925-8c4test_imaged-fbb841ae71f6",
+	},
+];
