@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/8ada446efc.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deals</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Helvetica, sans-serif;
+      }
+      #topdiv {
+        width: 100%;
+        height: 400px;
+      }
+      #one {
+        width: 100%;
+        height: 20%;
+        color: white;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #one > button {
+        width: 150px;
+        padding: 10px;
+        margin-left: 15px;
+        border: 1px solid black;
+        border-radius: 20px;
+        box-sizing: border-box;
+        resize: vertical;
+        background-color: red;
+        color: white;
+      }
+      #two {
+        width: 100%;
+        height: 74%;
+        position: relative;
+      }
+      #two > img {
+        width: 100%;
+        height: 100%;
+      }
+      #two > div {
+        position: absolute;
+        top: 40%;
+        left: 32%;
+      }
+      #two > div > h1 {
+        color: white;
+        text-align: center;
+        font-size: 60px;
+      }
+      .logo {
+        margin-top: 0px;
+        width: 50px;
+        height: 6%;
+        margin-left: 15%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+      .logo > div {
+        background-color: red;
+      }
+      #middiv {
+        width: 70%;
+        margin: auto;
+        margin-top: 50px;
+        height: auto;
+      }
+      #up {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 10%;
+      }
+      #up > h3 {
+        font-size: 30px;
+      }
+      #down {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+      }
+      #down > div {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 10px;
+      }
+      #down > div > img {
+        width: 100%;
+        height: 50%;
+      }
+      .notimg1 {
+        background-color: black;
+        color: white;
+      }
+      .notimg2 {
+        background-color: red;
+      }
+      .notimg1 > div {
+        width: 100%;
+        height: 20%;
+        margin: auto;
+      }
+      i {
+        color: red;
+        margin-top: 40px;
+        margin-left: 45%;
+      }
+      #heading {
+        width: 100%;
+        height: 40%;
+        text-align: center;
+        margin-top: 70px;
+      }
+      .notimg1 > div > button {
+        width: 150px;
+        padding: 10px;
+        margin-left: 95px;
+        border: 1px solid white;
+        border-radius: 20px;
+        box-sizing: border-box;
+        resize: vertical;
+        background-color: black;
+        color: white;
+      }
+      .notimg1 > div > button:hover {
+        background-color: white;
+        color: black;
+      }
+      .notimg2 > h1 {
+        color: white;
+        text-align: center;
+        margin-top: 70px;
+      }
+      .notimg2 > button {
+        margin-top: 50px;
+        width: 150px;
+        padding: 10px;
+        margin-left: 95px;
+        border: 1px solid white;
+        border-radius: 20px;
+        box-sizing: border-box;
+        resize: vertical;
+        background-color: red;
+        color: white;
+      }
+      .notimg2 > button:hover {
+        background-color: white;
+        color: black;
+      }
+      .bottom>h1{
+        margin-top: 10px;
+        text-align: center;
+        color: red;
+      }
+      .bottom>p{
+        margin-top: 10px;
+        text-align: center;
+      }
+      .bottom>div{
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+      }
+      .bottom>div>button{
+        /* margin-top: 50px; */
+        width: 100px;
+        padding: 10px;
+        margin-left: 95px;
+        border: 1px solid black;
+        border-radius: 20px;
+        box-sizing: border-box;
+        resize: vertical;
+        background-color:white;
+        color:black;
+      }
+      .bottom>div>button:hover {
+        background-color:black;
+        color: white;
+      }
+      #footer{
+        width: 100%;
+        height: 400px;
+        background-color: black;
+        margin-top: 50px;
+      }
+      #footer>div{
+        width: 70%;
+        margin: auto;
+        height: 300px;
+        border: 1px white;
+        margin-top: 20px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="topdiv">
+      <div id="one">
+        <h3>LET'S ORDER FOR DELIVERY, PICK UP, OR DINE-IN</h3>
+        <button>Start Order</button>
+      </div>
+      <div id="two">
+        <img
+          src="https://tse1.mm.bing.net/th?id=OIP.w5S9tDN5XXB7lEjt2De9-AHaCO&pid=Api&P=0"
+          alt=""
+        />
+        <div><h1>DEALS & OFFERS</h1></div>
+      </div>
+      <div class="logo">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div id="middiv">
+      <div id="up">
+        <h3>NATIONAL OFFERS</h3>
+        <a>Sign In to see exclusive offers & deals</a>
+      </div>
+      <div id="down">
+        <div class="notimg1">
+          <div><i class="fa-solid fa-location-dot fa-3x"></i></div>
+          <div id="heading"><h1>SELECT A KFC TO SEE LOCAL OFFERS</h1></div>
+          <div><button>Find a KFC</button></div>
+        </div>
+        <div class="notimg2">
+          <h1>SIGN IN TO SEE MORE EXCLUSIVE OFFERS & DEALS</h1>
+          <button>Login</button>
+        </div>
+        <div class="bottom">
+          <img
+            src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/xl/CHKZINGER.jpg"
+            alt=""
+          />
+          <h1>1 Pc free Chicken...</h1>
+          <p>1 Pc free Chicken Zinger on a cart value of 399 or above on first order. Only for...</p>
+          <div>
+            <a>View Details</a>
+            <button>Redeem</button>
+          </div>
+        </div>
+        <div class="bottom">
+          <img
+            src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/md/VEGZINGER.jpg"
+            alt=""
+          />
+          <h1>1 Pc free Veg Zinge...</h1>
+          <p>1 Pc free Veg Zinger on a cart value of 399 or above on first order. Only for registered...</p>
+          <div>
+            <a>View Details</a>
+            <button>Redeem</button>
+          </div>
+        </div>
+        <div class="bottom">
+          <img
+            src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/md/ADDCHK99.jpg"
+            alt=""
+          />
+          <h1>Add 2 Pc Hot n...</h1>
+          <p>Add 2 Pc Hot n Crispy Chicken @ just Rs 99 on min cart value of Rs 499 or more....</p>
+          <div>
+            <a>View Details</a>
+            <button>Redeem</button>
+          </div>
+        </div>
+        <div class="bottom">
+          <img
+            src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/offers/md/BIGSAVE.jpg"
+            alt=""
+          />
+          <h1>Upto Rs 100  off on...</h1>
+          <p>Upto Rs 100 off on min cart value of Rs 599 or more . Applicable on 4th order onward...</p>
+          <div>
+            <a>View Details</a>
+            <button>Redeem</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+       <div></div>
+    </div>
+  </body>
+</html>
