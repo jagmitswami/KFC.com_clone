@@ -1,0 +1,253 @@
+@import url(//db.onlinewebfonts.com/c/9a835ecd5504d7ec84ad5fa704987c94?family=National+2);
+
+@font-face {font-family: "National 2"; src: url("//db.onlinewebfonts.com/t/9a835ecd5504d7ec84ad5fa704987c94.eot"); src: url("//db.onlinewebfonts.com/t/9a835ecd5504d7ec84ad5fa704987c94.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9a835ecd5504d7ec84ad5fa704987c94.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9a835ecd5504d7ec84ad5fa704987c94.woff") format("woff"), url("//db.onlinewebfonts.com/t/9a835ecd5504d7ec84ad5fa704987c94.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9a835ecd5504d7ec84ad5fa704987c94.svg#National 2") format("svg"); }
+
+
+body{
+    padding: 0px ;
+    margin: 0px;
+}
+#navbar{
+    color: #202124;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    align-items: center;
+    padding-bottom: 23px;
+    padding-top: 23px;
+    position:fixed;
+    font-size: 14px;
+}
+#nav_cart{
+    display: flex;
+    padding-top: 4px;
+    font-family: "National 2";src: url("//db.onlinewebfonts.com/t/9a835ecd5504d7ec84ad5fa704987c94.eot");
+    font-weight: 500;
+}
+#nav_cart>a{
+    white-space: pre;
+    font-family: "National 2";src: url("//db.onlinewebfonts.com/t/9a835ecd5504d7ec84ad5fa704987c94.eot");
+    padding: 0 15px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #202124;
+    text-decoration: none;
+    
+}
+#cart_cnt{
+    position: absolute;
+    top: 53%;
+    right: 16%;
+    transform: translate( -50%, -50% );
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+#nav_cart>a{
+    cursor: pointer;
+    display: flex;
+    justify-content: right;
+}
+#nav_cart>a:nth-child(2){
+    display: flex;
+    position: relative;
+    margin-right: 40%;
+    
+    
+}
+#nav_cart>a:nth-child(1){
+    border-right: #e3e3e3 solid 1px;
+    margin-right: -120px;
+}
+#cart_svg{
+    width: 30%;
+    display: block;
+}
+#nav_titles{
+    padding-top: 4px;
+    font-family: "National 2";
+    font-weight: 500;
+    
+}
+
+#nav_titles>button{
+    font-family: "National 2"; src: url("//db.onlinewebfonts.com/t/9a835ecd5504d7ec84ad5fa704987c94.eot");
+    all: unset;
+    cursor: pointer;
+    margin-left: 50px;
+    position: relative;
+    
+}
+#nav_logo{
+ padding-left:9vw;
+ padding-top: 1vw;
+}
+
+#signin_svg{
+    padding-right: 13px;
+    cursor: pointer;
+}
+#burger{
+    display: none;
+}
+#mySidebar{
+    display: none;
+}
+
+@media screen and (min-width:320px) and (max-width:1024px) {
+    #nav_titles{
+        display: none;
+    }
+    #nav_cart>a:nth-child(1){
+        display: none;
+    }
+    #nav_cart>a:nth-child(2){
+        margin-right: 20px;
+        padding-right: 0px;
+    }
+    #cart_svg{
+        width:15%
+    }
+    #cart_cnt{
+        position: absolute;
+        top: 53%;
+        right: 4%;
+        transform: translate( -50%, -50% );
+    }
+    #navbar{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    #nav_logo{
+        padding-left: 30vw;
+        padding-top: 0px;
+    }
+    #burger{
+        display: block;
+        padding: 0 2%;
+        transition: margin-left .5s;
+        padding: 20px;
+      }
+    .sidebar {
+        height: 100%;
+        width: 0; 
+        position: fixed; 
+        z-index: 1; 
+        top: 0;
+        left: 0;
+        background-color: white; 
+        overflow-x: hidden; 
+        padding-top: 60px; 
+        transition: 0.5s; 
+      }
+      .sidebar a {
+        font-family: "National 2"; src: url("//db.onlinewebfonts.com/t/9a835ecd5504d7ec84ad5fa704987c94.eot");
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #202124;
+        display: block;
+        transition: 0.3s;
+      }
+      .sidebar a:hover {
+        color: #f1f1f1;
+      }
+      
+      .sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        left: 5px;
+        font-size: 36px;
+        margin-left: 10px;
+      }
+      #sidebar_nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        align-items: center;
+        font-size: 14px;
+      }
+     
+      #sidecart_cnt{
+        position: absolute;
+        top: 5%;
+        right: 4%;
+        z-index: 25;
+        transform: translate( -50%, -50% );
+        text-align: center;
+        color: black;
+        font-weight: bold;
+      }
+      #sidecart_svg{
+        width: 5%;
+        position: absolute;
+        top: 5%;
+        right: -.4%;
+        transform: translate( -50%, -50% );
+        text-align: center;
+        color: black;
+        font-weight: bold;
+      }
+
+      #sidebar_logo{
+        width: 5%;
+        position: absolute;
+        top: 3.9%;
+        right: 50%;
+        transform: translate( -50%, -50% );
+        text-align: center;
+      }
+      #sign_side{
+        font-size: 15px;
+      }
+      .menu{
+        
+        width: 90%;
+        display: flex;
+        font-family: "National 2"; src: url("//db.onlinewebfonts.com/t/9a835ecd5504d7ec84ad5fa704987c94.eot");
+        align-content: center;
+        background-color: #f8f7f5;
+        justify-content: space-between;
+        margin: auto;
+        margin-top: 40px;
+      }
+      .menu>img{
+        width: 40%;
+      }
+      .menu>div{
+        margin-top: 15%;
+        margin-left: 5%;
+      }
+      .data_menu{
+        width: 90%;
+        background-color: #f8f7f5;
+        margin: auto;
+        height: auto;
+        margin-top: 40px;
+      }
+      .data_menu>div:first-child{
+        padding-top: 60px;
+      }
+      .data_menu>div{
+        margin-top: 15%;
+        margin-left: 7%;
+      }
+
+}
+
+
+
+
