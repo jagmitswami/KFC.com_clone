@@ -15,10 +15,19 @@
 		<title>KFC Menu Prices | KFC Menu Deals, Offers &amp; Exclusives</title>
 	</head>
 	<body>
-		<a href="#main">
+    <div id="top"></div>
+		<section>
+			<div id="searchbar_container">
+				<span><i class="bi bi-search"></i></span>
+				<input type="text" id="menu_search" />
+				<span><i class=" medium bi bi-x-circle" id="clear_search"></i></span>
+			</div>
+		</section>
+
+		<a href="#top">
 			<div id="go_to_top"><i class="bi bi-chevron-right top_icon"></i></div>
 		</a>
-
+      <section id="display_search_results" class=""></section>
 		<section id="main">
 			<!-- chicken bucket section -->
 			<section id="menu_1">
@@ -74,3 +83,4 @@
 	</body>
 </html>
 <script src="./menu.mjs" type="module"></script>
+<script src="./menuFunctionality.mjs" type="module" defer></script>

@@ -47,7 +47,7 @@ listView.onclick = () => {
 };
 
 /* appending the first chicken data */
-function appendNormalCards(data, container) {
+export function appendNormalCards(data, container) {
 	data.forEach((menu) => {
 		let {
 			image: i,
@@ -136,6 +136,7 @@ function appendViewCards(data, container) {
 		addTocart.append(btnLogo);
 		let btnContainer = document.createElement("div");
 		btnContainer.append(addTocart);
+		btnContainer.setAttribute("class", "button_container");
 		let posterContainer = document.createElement("div");
 		let contentContainer = document.createElement("div");
 		let subContainer = document.createElement("div");

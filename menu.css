@@ -1,5 +1,31 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 
+/* Search bar styling */
+
+#searchbar_container {
+	max-width: max-content;
+	margin: 20px;
+	padding: 10px;
+	border: 1px solid goldenrod;
+	border-radius: 20px;
+}
+
+#menu_search,
+#menu_search:focus {
+	border: none;
+	outline: none;
+}
+
+.search_results {
+	box-sizing: border-box;
+	width: 90%;
+	margin: auto;
+}
+
+.search_results > div {
+	margin-top: 30px;
+}
+
 #go_to_top {
 	background-color: white;
 	transform: rotate(-90deg);
@@ -55,7 +81,7 @@ img {
 	overflow: hidden;
 	border-radius: 10px;
 	margin-left: 20px;
-	box-shadow: 10px 7px 8px gray;
+	box-shadow: 4px 5px 8px gray, -6px -3px 8px gray;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -176,10 +202,16 @@ button:hover {
 /* All media quries are written here */
 
 @media all and (min-width: 1024px) {
+	.search_results {
+		display: grid;
+		grid-template-columns: repeat(3, 32.5%);
+		gap: 50px 20px;
+		padding: 50px 0px;
+	}
 	#main {
 		padding: 50px 0px;
 	}
-	.menu_1_cards {
+	#menu_1 {
 		background-color: #f8f7f5;
 	}
 	#view_option {
@@ -191,16 +223,41 @@ button:hover {
 		grid-template-columns: repeat(2, 42.5%);
 		gap: 50px;
 	}
+	.cards {
+		grid-template-columns: repeat(3, 29%);
+	}
+
+	.menu_cards_1 {
+		padding: 0px;
+		overflow: hidden;
+	}
+
 	.sub_container {
 		display: flex;
 		flex-direction: column;
 	}
 	.sub_container > div:last-child {
 		order: 2;
+		padding: 15px;
 	}
-	.menu_1_cards > div > img,
-	.sub_container img {
+	.menu_1_cards > div > img {
 		width: 100%;
 		aspect-ratio: 14/5;
 	}
+	.sub_container img {
+		border-radius: 0;
+		width: 100%;
+		aspect-ratio: 9/7;
+	}
+
+	.button_container {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+/* Style to hide the all menu cards on search !important it should be at the bottom */
+
+.hide_menu {
+	display: none;
 }

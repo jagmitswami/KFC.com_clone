@@ -101,11 +101,11 @@ export default [
 	{
 		image:
 			" https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K622.jpg?ver=19.25\t",
-		title: " D-K622.jpg?ver=19.25",
+		title: "Veg Biryani Bucket",
 		desc: "Hyderabadi style Biryani rice served with Veg Patty & Spicy Gravy",
 		mrp: "",
 		price: 188.57,
-		type: " veg",
+		type: " Veg",
 		serve: "Serves 1",
 		id: "6557dc48-9e75-47d6-980b-b0ef612a93c5",
 	},
