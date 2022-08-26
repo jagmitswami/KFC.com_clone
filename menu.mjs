@@ -1,3 +1,4 @@
+/* data import */
 import beverageData from "./data/beverages.js";
 import biryaniData from "./data/biryanibuckets.js";
 import boxmealsData from "./data/boxmeals.js";
@@ -6,6 +7,9 @@ import chickensData from "./data/chicken.js";
 import newlaunchData from "./data/newlaunch.js";
 import snackData from "./data/snacks.js";
 import stayhomeData from "./data/stayhome.js";
+
+/* function import */
+import { addItemTocart } from "./common.mjs";
 
 let chickenCards = document.querySelector(".menu_1_cards");
 let newLaunchCards = document.querySelector(".menu_2_cards");
@@ -36,6 +40,7 @@ gridView.onclick = () => {
 	cards.forEach((el) => el.classList.add("menu_cards_1_listView"));
 	subContainerCard.forEach((el) => el.classList.add("sub_container_listView"));
 };
+
 listView.onclick = () => {
 	console.log("top to bottom view");
 	let subContainerCard = document.querySelectorAll(".sub_container");
@@ -87,6 +92,7 @@ export function appendNormalCards(data, container) {
 		addTocart.append(btnLogo);
 		let topContainer = document.createElement("div");
 		let btnContainer = document.createElement("div");
+		addTocart.onclick = () => addItemTocart(id, menu);
 		topContainer.append(title, desc, mrp, price, type, serve);
 		btnContainer.append(addTocart);
 		card.append(poster, topContainer, btnContainer);
@@ -108,6 +114,7 @@ function appendViewCards(data, container) {
 			serve: s,
 			id,
 		} = menu;
+
 		let card = document.createElement("div");
 		let poster = document.createElement("img");
 		let title = document.createElement("h4");
@@ -141,6 +148,8 @@ function appendViewCards(data, container) {
 		let contentContainer = document.createElement("div");
 		let subContainer = document.createElement("div");
 
+		addTocart.onclick = () => addItemTocart(id, menu);
+		
 		posterContainer.append(poster);
 		contentContainer.append(title, desc, mrp, price, type, serve);
 		subContainer.append(posterContainer, contentContainer);

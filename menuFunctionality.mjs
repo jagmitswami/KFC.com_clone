@@ -24,6 +24,9 @@ let resultDisplay = document.getElementById("display_search_results");
 let main = document.getElementById("main");
 let clearSearch = document.getElementById("clear_search");
 
+
+
+/* Search functionality for menu */
 menuSearch.onkeydown = () => {
 	let query = menuSearch.value;
 	if (event.key === "Enter" && query !== "") {
@@ -50,6 +53,8 @@ menuSearch.onkeydown = () => {
 	// console.log(event.key==="Enter");
 };
 
+
+/* Clear search functionality */
 clearSearch.onclick = () => {
 	resultDisplay.classList.add("hide_menu");
 	main.classList.remove("hide_menu");
