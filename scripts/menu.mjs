@@ -1,11 +1,11 @@
-import beverageData from "./data/beverages.js";
-import biryaniData from "./data/biryanibuckets.js";
-import boxmealsData from "./data/boxmeals.js";
-import burgerData from "./data/burgers.js";
-import chickensData from "./data/chicken.js";
-import newlaunchData from "./data/newlaunch.js";
-import snackData from "./data/snacks.js";
-import stayhomeData from "./data/stayhome.js";
+import beverageData from "../data/beverages.js";
+import biryaniData from "../data/biryanibuckets.js";
+import boxmealsData from "../data/boxmeals.js";
+import burgerData from "../data/burgers.js";
+import chickensData from "../data/chicken.js";
+import newlaunchData from "../data/newlaunch.js";
+import snackData from "../data/snacks.js";
+import stayhomeData from "../data/stayhome.js";
 
 let chickenCards = document.querySelector(".menu_1_cards");
 let newLaunchCards = document.querySelector(".menu_2_cards");
@@ -150,3 +150,5 @@ function appendViewCards(data, container) {
 	});
 	// console.log("data arrived for appendViewCards");
 }
+
+

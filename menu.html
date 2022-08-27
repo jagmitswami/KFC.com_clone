@@ -9,16 +9,35 @@
 			rel="stylesheet"
 		/>
 
-		<link rel="stylesheet" href="common.css" />
-		<link rel="stylesheet" href="menu.css" />
+		<link rel="stylesheet" href="./styles/menu.css" />
+		<link rel="stylesheet" href="./styles/navbar.css">
+		<link rel="stylesheet" href="./styles/sidebar.css">
 
 		<title>KFC Menu Prices | KFC Menu Deals, Offers &amp; Exclusives</title>
 	</head>
 	<body>
+		<div id="navbar"></div>
+
 		<a href="#main">
 			<div id="go_to_top"><i class="bi bi-chevron-right top_icon"></i></div>
 		</a>
-
+	<div id="data">
+		<div id="sidebar">
+			<img id="logo" src="https://online.kfc.co.in/static/media/Stripes_Small_OffersIcon.87fc6256.svg">
+			<h1 id="title">KFC MENU</h1><br>
+			<ul>
+			<li><a>CHICKEN BUCKETS</a></li>
+			<li><a> NEW LAUNCH</a></li>
+			<li><a>BIRYANI BUCKETS</a></li>
+			<li><a>BOX MEALS</a></li>
+			<li><a>BURGERS</a></li>
+			<li><a>STAY HOME SPECIALS</a></li>
+			<li><a>SNACKS</a></li>
+			<li><a>BEVERAGES</a></li>
+		</ul>
+	
+		</div>
+		
 		<section id="main">
 			<!-- chicken bucket section -->
 			<section id="menu_1">
@@ -71,6 +90,22 @@
 				<div class="menu_8_cards cards"></div>
 			</section>
 		</section>
+	</div>
+
 	</body>
 </html>
-<script src="./menu.mjs" type="module"></script>
+<script type="module">
+	import navbar from './components/navbarimport.js'
+    document.getElementById("navbar").innerHTML=navbar()
+</script>
+<script src="./scripts/menu.mjs" type="module"></script>
+<script src="./scripts/navbar.js"></script>
+<script>
+let tomenu=()=>{
+	window.location.href="menu.html"
+}
+
+let todeal=()=>{
+	window.location.href="deals.html"
+}
+</script>

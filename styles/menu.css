@@ -1,5 +1,8 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 
+#data{
+	display: flex;
+}
 #go_to_top {
 	background-color: white;
 	transform: rotate(-90deg);
@@ -23,11 +26,12 @@
 	color: black;
 }
 
-h1 {
+h1{
 	padding: 20px;
 	font-size: 1.5rem;
 	font-weight: 800;
 	color: #2e2c2c;
+	margin-left: -23px;
 }
 
 img {
@@ -36,6 +40,7 @@ img {
 
 #main {
 	scroll-behavior: smooth;
+	margin-left: 25px;
 }
 
 .menu_1_cards {
@@ -64,6 +69,7 @@ img {
 .menu_cards > div {
 	padding: 15px;
 }
+
 .menu_cards > div:nth-of-type(1) > span:nth-of-type(1) {
 	text-decoration: line-through;
 }
@@ -133,7 +139,7 @@ button:hover {
 .sub_container {
 	width: 100%;
 	display: grid;
-	grid-template-columns: 60% 30%;
+	grid-template-columns: 30% 30%;
 	gap: 5%;
 }
 
@@ -176,11 +182,13 @@ button:hover {
 /* All media quries are written here */
 
 @media all and (min-width: 1024px) {
+	
 	#main {
 		padding: 50px 0px;
 	}
 	.menu_1_cards {
 		background-color: #f8f7f5;
+		
 	}
 	#view_option {
 		display: none;

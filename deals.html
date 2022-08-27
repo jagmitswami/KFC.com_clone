@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deals</title>
+    <link rel="stylesheet" href="./styles/navbar.css">
     <style>
         *{
             margin: 0;
@@ -70,6 +71,7 @@
     </style>
 </head>
 <body>
+  <div id="navbar"></div>
     <div id="topdiv">
         <div id="one">
             <h3>LET'S ORDER FOR DELIVERY, PICK UP, OR DINE-IN</h3>
@@ -87,3 +89,16 @@
     </div>
 </body>
 </html>
+<script type="module">
+	import navbar from './components/navbarimport.js'
+    document.getElementById("navbar").innerHTML=navbar()
+</script>
+<script>
+  let tomenu=()=>{
+    window.location.href="menu.html"
+  }
+  
+  let todeal=()=>{
+    window.location.href="deals.html"
+  }
+  </script>
