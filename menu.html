@@ -1,86 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			href="https://fonts.googleapis.com/icon?family=Material+Icons"
-			rel="stylesheet"
-		/>
 
-		<link rel="stylesheet" href="common.css" />
-		<link rel="stylesheet" href="menu.css" />
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
-		<title>KFC Menu Prices | KFC Menu Deals, Offers &amp; Exclusives</title>
-	</head>
-	<body>
-    <div id="top"></div>
-		<section>
-			<div id="searchbar_container">
-				<span><i class="bi bi-search"></i></span>
-				<input type="text" id="menu_search" />
-				<span><i class=" medium bi bi-x-circle" id="clear_search"></i></span>
-			</div>
+	<link rel="stylesheet" href="common.css" />
+	<link rel="stylesheet" href="menu.css" />
+	<link rel="shortcut icon" href="https://online.kfc.co.in/favicon.ico" type="image/x-icon">
+
+	<title>KFC Menu Prices | KFC Menu Deals, Offers &amp; Exclusives</title>
+</head>
+
+<body>
+	<div id="top"></div>
+	<section>
+		<div id="searchbar_container">
+			<span><i class="bi bi-search"></i></span>
+			<input type="text" id="menu_search" />
+			<span><i class=" medium bi bi-x-circle" id="clear_search"></i></span>
+		</div>
+	</section>
+
+	<a href="#top">
+		<div id="go_to_top"><i class="bi bi-chevron-right top_icon"></i></div>
+	</a>
+	<section id="display_search_results" class=""></section>
+	<section id="main">
+		<!-- chicken bucket section -->
+		<section id="menu_1">
+			<h1>CHICKEN BUCKETS</h1>
+			<div class="menu_1_cards"></div>
+		</section>
+		<!-- view option -->
+		<div id="view_option">
+			View :
+			<span id="show_grid">
+				<i class="medium material-icons">grid_on</i>
+			</span>
+			<span id="show_list"> <i class="medium material-icons">list</i> </span>
+		</div>
+		<hr />
+		<!-- new launch section -->
+		<section id="menu_2">
+			<h1>NEW LAUNCH</h1>
+			<div class="menu_2_cards cards"></div>
+		</section>
+		<!-- biryani buckets section -->
+		<section id="menu_3">
+			<h1>BIRYANI BUCKETS</h1>
+			<div class="menu_3_cards cards"></div>
+		</section>
+		<!-- box meals section -->
+		<section id="menu_4">
+			<h1>BOX MEALS</h1>
+			<div class="menu_4_cards cards"></div>
+		</section>
+		<!-- burgers section -->
+		<section id="menu_5">
+			<h1>BURGERS</h1>
+			<div class="menu_5_cards cards"></div>
+		</section>
+		<!-- stay home section -->
+		<section id="menu_6">
+			<h1>STAY HOME SPECIALS</h1>
+			<div class="menu_6_cards cards"></div>
 		</section>
 
-		<a href="#top">
-			<div id="go_to_top"><i class="bi bi-chevron-right top_icon"></i></div>
-		</a>
-      <section id="display_search_results" class=""></section>
-		<section id="main">
-			<!-- chicken bucket section -->
-			<section id="menu_1">
-				<h1>CHICKEN BUCKETS</h1>
-				<div class="menu_1_cards"></div>
-			</section>
-			<!-- view option -->
-			<div id="view_option">
-				View :
-				<span id="show_grid">
-					<i class="medium material-icons">grid_on</i>
-				</span>
-				<span id="show_list"> <i class="medium material-icons">list</i> </span>
-			</div>
-			<hr />
-			<!-- new launch section -->
-			<section id="menu_2">
-				<h1>NEW LAUNCH</h1>
-				<div class="menu_2_cards cards"></div>
-			</section>
-			<!-- biryani buckets section -->
-			<section id="menu_3">
-				<h1>BIRYANI BUCKETS</h1>
-				<div class="menu_3_cards cards"></div>
-			</section>
-			<!-- box meals section -->
-			<section id="menu_4">
-				<h1>BOX MEALS</h1>
-				<div class="menu_4_cards cards"></div>
-			</section>
-			<!-- burgers section -->
-			<section id="menu_5">
-				<h1>BURGERS</h1>
-				<div class="menu_5_cards cards"></div>
-			</section>
-			<!-- stay home section -->
-			<section id="menu_6">
-				<h1>STAY HOME SPECIALS</h1>
-				<div class="menu_6_cards cards"></div>
-			</section>
-
-			<!-- snacks section -->
-			<section id="menu_7">
-				<h1>SNACKS</h1>
-				<div class="menu_7_cards cards"></div>
-			</section>
-			<!-- beverages section -->
-			<section id="menu_8">
-				<h1>BEVERAGES</h1>
-				<div class="menu_8_cards cards"></div>
-			</section>
+		<!-- snacks section -->
+		<section id="menu_7">
+			<h1>SNACKS</h1>
+			<div class="menu_7_cards cards"></div>
 		</section>
-	</body>
+		<!-- beverages section -->
+		<section id="menu_8">
+			<h1>BEVERAGES</h1>
+			<div class="menu_8_cards cards"></div>
+		</section>
+	</section>
+</body>
+
 </html>
 <script src="./menu.mjs" type="module"></script>
 <script src="./menuFunctionality.mjs" type="module" defer></script>
