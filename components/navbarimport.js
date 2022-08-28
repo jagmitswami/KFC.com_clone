@@ -20,8 +20,8 @@ function navbar() {
             <img src="https://images.ctfassets.net/wtodlh47qxpt/6bJdGLRkksNvWP4LI9ZiFF/cb89d6393492fd093e0f99980abfa39e/Account_Icon.svg" id="signin_svg2" >
             <span id="sign_side">Sign In/Sign up <span> →</span></span>
         </a></a>
-    <div class="menu"><div>Menu</div><img src="https://images.ctfassets.net/wtodlh47qxpt/4k2cm92M32R26grdRRbI3B/e335a7a29e35e5d7aa1900a7f65eea12/menu__1.png" alt=""></div>
-    <div class="menu"><div>Deals</div><img src="https://images.ctfassets.net/wtodlh47qxpt/7wp9jn9bCtkSpS2RklLTXD/9f5a47d39f34c6ede838ac01830659db/Deals.png" alt=""></div>
+    <div class="menu" onclick="tomenu()"><div>Menu</div><img src="https://images.ctfassets.net/wtodlh47qxpt/4k2cm92M32R26grdRRbI3B/e335a7a29e35e5d7aa1900a7f65eea12/menu__1.png" alt=""></div>
+    <div class="menu" onclick="todeal()"><div>Deals</div><img src="https://images.ctfassets.net/wtodlh47qxpt/7wp9jn9bCtkSpS2RklLTXD/9f5a47d39f34c6ede838ac01830659db/Deals.png" alt=""></div>
     <div class="data_menu">
         <div >Get Help</div>
         <div >Contact Us</div>

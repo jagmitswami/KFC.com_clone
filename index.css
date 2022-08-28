@@ -166,6 +166,11 @@ button {
   margin: auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.deals_opt button {
+  padding: 20px 60px;
 }
 
 #deals_sub_heading h2 {
