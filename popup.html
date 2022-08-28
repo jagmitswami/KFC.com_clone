@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <script
+      src="https://kit.fontawesome.com/8ada446efc.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        font-family: Helvetica, sans-serif;
+      }
+      #container{
+        width: 80%;
+        height: 500px;
+        margin: auto;
+        margin-top: 50px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background-color: #f3f3f3;
+      }
+      #container>div{
+        width:100%;
+        height: auto;
+        text-align: center;
+      }
+      #detail{
+        width: 80%;
+        height: auto;
+        margin: auto;
+        margin-top: 30px;
+      }
+      #form{
+        width: 80%;
+        height: auto;
+        margin: auto;
+        margin-top: 20px;
+      }
+      input[type="submit"] {
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    resize: vertical;
+    background-color: #f3f3f3;
+  }
+  #container .close-btn{
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+  <div id="container">
+    <div>
+        <label  id="close" for="show" class="close-btn fas fa-times" title="close"></label>
+        <div><h1>START YOUR ORDER</h1></div>
+        <div id="detail">
+        <h3>HOW WOULD YOU LIKE TO RECEIVE YOUR ORDER?</h3> 
+        <form id="form" action="">
+            <input type="submit" value="Delivery">
+            <input type="submit" value="Pick up">
+            <input type="submit" value="Dine In">
+        </form>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
+<script>
+    
+ let closebtn= document.querySelector("#close");
+
+ closebtn.addEventListener("click", function(){
+    window.location.href="deals.html";
+ })
+
+</script>

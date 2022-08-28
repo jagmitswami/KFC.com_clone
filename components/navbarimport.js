@@ -1,5 +1,5 @@
-function navbar(){
-    return `<div id="mySidebar" class="sidebar">
+function navbar() {
+  return `<div id="mySidebar" class="sidebar">
     <div id="sidebar_nav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div id="sidebar_logo">
@@ -33,7 +33,7 @@ function navbar(){
     <img src="https://online.kfc.co.in/static/media/MenuIcon.e607771f.svg" onclick="openNav()">
 </div>
 <div>
-<img src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg" id="nav_logo">
+<img src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg" id="nav_logo" onclick="toindex()">
 <span id="nav_titles">
     <button onclick="tomenu()">Menu</button>
     <button onclick="todeal()">Deals</button>
@@ -50,7 +50,7 @@ function navbar(){
     <div id="cart_cnt" onclick="tocartpage()">0</div>
     <img src="https://images.ctfassets.net/wtodlh47qxpt/6qtBVFuno7pdwOQ9RIvYm9/d13e9b7242980972cf49beddde2cc295/bucket_cart_icon.svg" id="cart_svg" onclick="tocartpage()" >
 </a>
-</div>`
+</div>`;
 }
 
 export default navbar;
