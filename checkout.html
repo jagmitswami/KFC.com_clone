@@ -16,11 +16,11 @@
 
     <header>
         <div>
-            <i class="bi bi-chevron-left backbtn_hide_largescreen"></i>
+            <i class="bi bi-chevron-left backbtn_hide_largescreen backBtn"></i>
 
             <!-- Visible in large screen -->
             <span id="back_cart_largescreen">
-                <button>Back to Cart</button>
+                <button class="backBtn">Back to Cart</button>
 
             </span>
         </div>
@@ -33,13 +33,13 @@
             </span>
         </div>
         <div>
-            <div>
+            <div id="need_help">
 
                 <span>?</span>
                 <!-- Visible in large screen -->
                 <span>Need Help ?</span>
             </div>
-            <div>
+            <div class="signin_btn">
 
                 <span><i class="bi bi-person-circle"></i></span>
                 <span>Sign In</span>
@@ -87,7 +87,7 @@
                         <div>Address 2</div>
                         <div>
 
-                            <input type="text" placeholder="Apartment,suite,unit,building,floor">
+                            <input type="text" placeholder="Apartment,suite,unit,building,floor" id="address_2_input">
                         </div>
                     </div>
                     <div>
@@ -118,7 +118,7 @@
                 <input type="radio" value="hand_delivery" id="hand_delivery" name="delivery">
                 <label for="hand_delivery">Hand it to me</label>
                 <hr>
-                <input type="text" placeholder="Enter delivery instructions (Optionsl)">
+                <input type="text" placeholder="Enter delivery instructions (Optional)" id="instructions">
 
             </div>
 
@@ -132,15 +132,15 @@
                     <h1> CONTACT INFO</h1>
                 </div>
                 <div>
-                    <button id="signin_btn">Sign in</button>
+                    <button id="signin_btn" class="signin_btn">Sign in</button>
                 </div>
             </div>
             <div>
                 <div class="input_container">
 
-                    <input type="text" placeholder="Full Name*">
-                    <input type="text" placeholder="Phone Number*">
-                    <input type="email" placeholder="Email*">
+                    <input type="text" placeholder="Full Name*" id="name">
+                    <input type="number" placeholder="Phone Number*" id="contact">
+                    <input type="email" placeholder="Email*" id="email">
                 </div>
                 <div>
                     <input type="checkbox">
@@ -160,7 +160,7 @@
             </div>
             <div>
                 <span>
-                    Add Payment Method
+                    UPI
                 </span>
             </div>
 
@@ -181,7 +181,7 @@
             </div>
             <div>
                 <span>Restaurant Handling(Incl.taxes)</span>
-                <span id="handling_charges"></span>
+                <span id="handling_charges"> &#x20b9 35</span>
             </div>
             <div></div>
             <div>
