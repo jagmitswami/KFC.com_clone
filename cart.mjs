@@ -8,6 +8,7 @@ let donate = document.getElementById("donate");
 let cartItemsTotal = document.getElementById("cart_items");
 let removeAll = document.getElementById("remove_all");
 let addMore = document.getElementById("add_more");
+let checkoutBtn = document.getElementById("checkout_btn");
 
 let rupeeIcon = "&#x20b9";
 let donateAmount = 0;
@@ -26,6 +27,7 @@ removeAll.onclick = () => {
 };
 
 addMore.onclick = () => (window.location.href = "menu.html");
+checkoutBtn.onclick = () => (window.location.href = "checkout.html");
 
 /* Render all the elements in cart to page */
 function renderpage() {
