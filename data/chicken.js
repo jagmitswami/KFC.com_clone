@@ -1,0 +1,145 @@
+export default [
+	{
+		image:
+			"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002153.jpg?ver=19.25",
+		title: "Peri Peri 10 Strips with Dynamite",
+		desc: "10 Spicy Peri Peri chicken strips & our Dynamite Spicy Mayo Sauce Bottle",
+		mrp: "",
+		price: 639,
+		type: "Non veg",
+		serve: "Serves 2-3",
+		id: "5ceaa803-485a-40d9-81da-6f363ecb3509",
+	},
+	{
+		image:
+			"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000892.jpg?ver=19.25",
+		title: "Bucket for Two",
+		desc: "Flat Rs. 115 off on combo of 2pc Hot & Crispy, 2 pc Smoky Red Chicken & Large Popcorn",
+		mrp: 744,
+		price: 599.05,
+		type: "Non veg",
+		serve: "Serves 2-3",
+		id: "94c93695-f4df-43cf-a9e3-6d9db4a4b946",
+	},
+	{
+		image:
+			"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002154.jpg?ver=19.25",
+		title: "Peri Peri 10 Strips with Nashville",
+		desc: "10 Spicy Peri Peri chicken strips & our Nashville Hot Sauce Bottle",
+		mrp: "",
+		price: 639.05,
+		type: "Non veg",
+		serve: "Serves 2-3",
+		id: "04d097ab-c90test_imaged-463a-8900-94977bbf07ce",
+	},
+	{
+		image:
+			"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002155.jpg?ver=19.25",
+		title: "Peri Peri 10 Leg Pc & 4 Dips",
+		desc: "Leg before any wicket! Save 27% on 10 Spicy Peri Peri Leg Pieces & 4 Dips",
+		mrp: "",
+		price: 924.76,
+		type: "Non veg",
+		serve: "Serves 3-4",
+		id: "deac6783-7811-419c-8516-052164a0ab25",
+	},
+	{
+		image:
+			"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002156.jpg?ver=19.25",
+		title: "Peri Peri 5 Leg Pc Meal",
+		desc: "5 Spicy Peri Peri Leg Pieces, 2 Dips, 1 Med Fries & a Pepsi PET",
+		mrp: "",
+		price: 628.57,
+		type: "Non veg",
+		serve: "Serves 2-3",
+		id: "21a17664-78b5-4f1b-8f4c-a5ea3a07f0ce",
+	},
+	{
+		image:
+			"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002157.jpg?ver=19.25",
+		title: "Peri Peri 5 Leg Pc & 2 Dips",
+		desc: "5 Spicy Peri Peri Leg Pieces, paired with 2 delicous dips",
+		mrp: "",
+		price: 515.24,
+		type: "Non veg",
+		serve: "Serves 2",
+		id: "ac143d0c-5d04-4508-80ae-882e2af21b30",
+	},
+	{
+		image:
+			"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000854.jpg?ver=19.25",
+		title: "Big 12",
+		desc: "Save 28% on 6pc Hot & Crispy Chicken, 6 Hot Wings & 2 dips",
+		mrp: 1046,
+		price: 719.05,
+		type: "Non veg",
+		serve: "Serves 2-3",
+		id: "811090a3-b41b-4975-a37b-98158567c447",
+	},
+	{
+		image:
+			"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002161.jpg?ver=19.25",
+		title: "Ultimate Savings Bucket",
+		desc: "Save 33% on signature bucket of 4pc Hot & crispy, 6 Wings, 4 strips, 2 Dips & Pepsi PET",
+		mrp: "",
+		price: 699.05,
+		type: "Non veg",
+		serve: "Serves 2-3",
+		id: "1542bf48-3d46-4463-86d2-ef353d80aa3c",
+	},
+	{
+		image:
+			"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000891.jpg?ver=19.25",
+		title: "Big 8",
+		desc: "Save 29% on this variety bucket of 4pc Hot & Crispy chicken & 4pc Smoky Red chicken",
+		mrp: 1008,
+		price: 684,
+		type: "Non veg",
+		serve: "Serves 2-3",
+		id: "454b8faf-6096-4af6-91f4-869f3f446436",
+	},
+	{
+		image:
+			" https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K445.jpg?ver=19.25",
+		title: "5pc Smoky Red Chicken",
+		desc: "Flat 20% off on 5pc Smoky red grilled chicken",
+		mrp: 655,
+		price: 499.05,
+		type: "Non veg",
+		serve: "Serves 2",
+		id: "f34db1c3-03a6-40b1-81ab-f76a9b1ccad0",
+	},
+	{
+		image:
+			"https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002162.jpg?ver=19.25",
+		title: "Mingles Bucket Meal",
+		desc: "Save Rs. 71 on 4 Hot Wings, 2 Chicken Strips, Reg Popcorn, medium fries & Pepsi PET",
+		mrp: "",
+		price: 479.05,
+		type: "Non veg",
+		serve: "Serves 2",
+		id: "ca8193e4-e805-4781-914c-819a9c3ae431",
+	},
+	{
+		image:
+			" https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K009.jpg?ver=19.25",
+		title: "8 pc Hot & Crispy Chicken",
+		desc: "Save Rs. 182 & get 8pc signature Hot & crispy chicken",
+		mrp: 968,
+		price: 748.57,
+		type: "Non veg",
+		serve: "Serves 3-4",
+		id: "2e5f4722-b177-4ba1-abb9-310b1cf1f3a3",
+	},
+	{
+		image:
+			" https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K012.jpg?ver=19.25",
+		title: "6 pc Hot & Crispy Chicken",
+		desc: "Flat 10% off on 6pc signature Hot & crispy chicken",
+		mrp: 726,
+		price: 619.05,
+		type: "Non veg",
+		serve: "Serves 2-3",
+		id: "8059ac32-a616-4194-b346-da8131d288d4",
+	},
+];
