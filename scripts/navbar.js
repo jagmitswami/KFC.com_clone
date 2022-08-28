@@ -44,3 +44,5 @@ let tomenu = () => {
 let todeal = () => {
   window.location.href = "deals.html";
 };
+
+getcartdata();
