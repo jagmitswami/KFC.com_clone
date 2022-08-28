@@ -19,12 +19,16 @@ function openNav() {
     document.getElementById("cart_cnt").innerText=currentdata.length
     let sum=0
     currentdata.forEach((ele) => {
-      sum+=Number(ele.price)
+      sum+=Number(ele.price*ele.count)
     });
 
     document.getElementById("cost_of_cart").innerText=Math.floor(sum)
    }
-
+   let tocartpage=()=>{
+    let tocart=document.getElementById("cart_svg")
+    tocart.onclick=()=>window.location.href="deals.html"
+   }
+   
 
    
    

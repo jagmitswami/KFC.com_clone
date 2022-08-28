@@ -25,6 +25,8 @@ getcartdata()
 
 
 
+
+
 let chickenCards = document.querySelector(".menu_1_cards");
 let newLaunchCards = document.querySelector(".menu_2_cards");
 let biryaniCards = document.querySelector(".menu_3_cards");
