@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://online.kfc.co.in/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/checkout.css">
+    <title>KCF Checkout</title>
+</head>
+
+<body>
+    <!-- navbar -->
+
+    <header>
+        <div>
+            <i class="bi bi-chevron-left backbtn_hide_largescreen backBtn"></i>
+
+            <!-- Visible in large screen -->
+            <span id="back_cart_largescreen">
+                <button class="backBtn">Back to Cart</button>
+
+            </span>
+        </div>
+        <div>
+            <h2 class="checkout_text_hide_largescreen">CHECKOUT</h2>
+
+            <!-- Visible in large screen -->
+            <span id="logo_largescreen">
+                <img src="https://online.kfc.co.in/static/media/kfcLogo.492728c6.svg" alt="KFC Logo">
+            </span>
+        </div>
+        <div>
+            <div id="need_help">
+
+                <span>?</span>
+                <!-- Visible in large screen -->
+                <span>Need Help ?</span>
+            </div>
+            <div class="signin_btn">
+
+                <span><i class="bi bi-person-circle"></i></span>
+                <span>Sign In</span>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="main">
+        <!-- top section -->
+        <div class="checkout_logo_title">
+            <div>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAUCAYAAAAOTSQ2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABDSURBVHgB7c4xDQAgEATBf3TgAP9ScIAPcPAkS0Ox014u2VwxdhR6zKz2l//t2+JjxlHGUcZRxlHGUcZRxlHGUcZRB8JSCDYbp9G6AAAAAElFTkSuQmCC"
+                    alt="logo">
+            </div>
+            <div class="checkout_heading">
+                <h2>CHECKOUT</h2>
+                <div>
+                    <span>
+                        <i class="bi bi-lock-fill"></i>
+                    </span>
+                    <span>
+                        Secure Checkout
+                    </span>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- delivery info section -->
+        <section class="delivery_info flex_column_smallscreen">
+
+            <div>
+                <h1>DELIVERY INFO</h1>
+            </div>
+            <div class="address_bar">
+                <div>
+
+                    <p>
+                        <span><i class="bi bi-geo-alt-fill"></i></span>
+                        KFC Bangalore-SJR KMangla
+                        Koramangala, Bengaluru, Karnataka, India
+                    </p>
+                    <div class="address_2">
+                        <div>Address 2</div>
+                        <div>
+
+                            <input type="text" placeholder="Apartment,suite,unit,building,floor" id="address_2_input">
+                        </div>
+                    </div>
+                    <div>
+                        <span><i class="bi bi-clock-fill"></i></span>
+                        <span>ASAP</span>
+                    </div>
+                </div>
+                <div>
+                    <span>Change</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- delivery options -->
+        <section class="delivery_options flex_column_smallscreen">
+            <div>
+                <h1>
+                    DELIVERY OPTIONS
+                </h1>
+
+            </div>
+            <div>
+                <input type="radio" value="atdoor" id="atdoor" name="delivery" checked>
+                <label for="atdoor">Leave it at my door</label>
+                <p>To protect you and our team, we practice contactless delivery. Your driver will leave the order at
+                    your door, knock, step away, and wait at a safe distance for you to collect your food.</p>
+
+                <input type="radio" value="hand_delivery" id="hand_delivery" name="delivery">
+                <label for="hand_delivery">Hand it to me</label>
+                <hr>
+                <input type="text" placeholder="Enter delivery instructions (Optional)" id="instructions">
+
+            </div>
+
+        </section>
+
+        <!-- Contact info section -->
+        <section class="contact_info flex_column_smallscreen">
+
+            <div>
+                <div>
+                    <h1> CONTACT INFO</h1>
+                </div>
+                <div>
+                    <button id="signin_btn" class="signin_btn">Sign in</button>
+                </div>
+            </div>
+            <div>
+                <div class="input_container">
+
+                    <input type="text" placeholder="Full Name*" id="name">
+                    <input type="number" placeholder="Phone Number*" id="contact">
+                    <input type="email" placeholder="Email*" id="email">
+                </div>
+                <div>
+                    <input type="checkbox">
+                    <span>
+                        I want to know about the cool stuff at KFC on Email & SMS (I know I can unsubscribe anytime).
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Payment Method -->
+        <section class="payment_method">
+            <div>
+                <h1>
+                    PAYMENT
+                </h1>
+            </div>
+            <div>
+                <span>
+                    UPI
+                </span>
+            </div>
+
+        </section>
+
+        <!-- Cart total and continue to payment section -->
+        <section class="cart_total">
+            <div>
+                <h2 id="cart_items_length"></h2>
+            </div>
+            <div>
+                <span>Subtotal</span>
+                <span id="subtotal"></span>
+            </div>
+            <div>
+                <span>GST</span>
+                <span id="gst"></span>
+            </div>
+            <div>
+                <span>Restaurant Handling(Incl.taxes)</span>
+                <span id="handling_charges"> &#x20b9 35</span>
+            </div>
+            <div></div>
+            <div>
+                <button id="checkout_btn">
+                    <span>
+                        Continue to Payment
+                    </span>
+                    <span id="total"></span>
+                </button>
+            </div>
+
+
+        </section>
+
+
+
+
+    </section>
+
+
+
+
+</body>
+
+</html>
+<script src="./scripts/checkout.mjs" type="module"></script>

@@ -7,12 +7,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="shortcut icon" href="https://online.kfc.co.in/favicon.ico" type="image/x-icon">
 
-	<link rel="stylesheet" href="common.css " />
-	<link rel="stylesheet" href="cart.css" />
+	<link rel="stylesheet" href="./styles/cart.css" />
+	<link rel="stylesheet" href="./styles/navbar.css" />
 	<title>KFC Cart</title>
 </head>
 
 <body>
+
+	<div id="navbar"></div>
 	<div class="page_heading">
 		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAeCAYAAAB5c901AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABNSURBVHgB7c9BDQAgAMPAgQ4c4F8KDvABFuBHSe+9LGmZ6SsXWkY52b3yW/M5A+kMpDOQzkA6A+kMpDOQzkA6A+kMpDOQzkA6A+kMpNu9MQhKmC+cDgAAAABJRU5ErkJggg=="
 			alt="logo" />
@@ -153,4 +155,12 @@
 </body>
 
 </html>
-<script src="cart.mjs" type="module"></script>
+
+<script src="./scripts/cart.mjs" type="module"></script>
+<script type="module">
+	import navbar from "./components/navbarimport.js"
+	let navBar = document.getElementById("navbar");
+	navBar.innerHTML = navbar();
+
+</script>
+<script src="./scripts/navbar.js" defer></script>

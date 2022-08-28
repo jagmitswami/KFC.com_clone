@@ -4,6 +4,10 @@
     font-family: Helvetica, sans-serif;
 }
 
+#footer>div a {
+    color: white;
+}
+
 #topdiv {
     width: 100%;
     height: 400px;
@@ -220,8 +224,8 @@ i {
     background-color: black;
     text-align: center;
     display: grid;
-    grid-template-columns: 7% 7% 7% 7% 7% 7% 7% 7% 7% 7% 7% 7% 7%;
-    gap: 10px;
+    grid-template-columns: repeat(11, 7%);
+    gap: 39px;
 }
 
 #footer>div {
@@ -229,6 +233,11 @@ i {
     font-size: small;
     margin-top: 50px;
     line-height: 35px;
+}
+
+#footer>div:first-child {
+    /* padding: 20px; */
+    margin-left: 20px;
 }
 
 #footer>div>a {
@@ -251,7 +260,39 @@ i {
     height: 100%;
 }
 
-@media all and (min-width: 401px) and (max-width: 800px) {
+@media all and (min-width: 401px) and (max-width: 1020px) {
+
+    #footer {
+        /* width: 80%; */
+        max-width: 100%;
+        box-sizing: border-box;
+        height: 300px;
+        height: max-content;
+        color: white;
+        margin-top: 70px;
+        background-color: black;
+        text-align: center;
+        display: grid;
+        gap: 23px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    #footer>div:first-child {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    #footer>div {
+        margin: auto;
+    }
+
+    #footer>div:first-child img {
+        width: 150px;
+    }
+
     #two>div>h1 {
         width: 100%;
         height: auto;

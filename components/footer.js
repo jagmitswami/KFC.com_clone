@@ -1,5 +1,5 @@
 function getFooter() {
-  return `  <div></div>
+  return `  
     <div>
       <img
         src="https://images.ctfassets.net/wtodlh47qxpt/25FSYFuEtGct8NSrtpKe6d/b602f6fe0bf294e6a6dff5d7648bf594/KFC_Logo.svg"
@@ -34,7 +34,6 @@ function getFooter() {
       <a>Careers</a>
       <a>Our Golden Past</a>
     </div>
-    <div></div>
     <div class="loc">
       <div><i class="fa-solid fa-location-dot"></i></div><a>Find a KFC</a>
 
@@ -50,7 +49,7 @@ function getFooter() {
         src="https://images.ctfassets.net/wtodlh47qxpt/em3mcMuAdXWlgucSJiTbS/d3ae7e51ed101d829e459355e255c47f/apple.svg"
         alt="">
     </div>
-    <div></div>`;
+   `;
 }
 
 export default getFooter;
