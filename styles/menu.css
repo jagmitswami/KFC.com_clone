@@ -209,6 +209,5 @@ button:hover {
 	.menu_1_cards > div > img,
 	.sub_container img {
 		width: 100%;
-		aspect-ratio: 14/5;
 	}
 }

@@ -26,14 +26,14 @@
 			<img id="logo" src="https://online.kfc.co.in/static/media/Stripes_Small_OffersIcon.87fc6256.svg">
 			<h1 id="title">KFC MENU</h1><br>
 			<ul>
-			<li><a>CHICKEN BUCKETS</a></li>
-			<li><a> NEW LAUNCH</a></li>
-			<li><a>BIRYANI BUCKETS</a></li>
-			<li><a>BOX MEALS</a></li>
-			<li><a>BURGERS</a></li>
-			<li><a>STAY HOME SPECIALS</a></li>
-			<li><a>SNACKS</a></li>
-			<li><a>BEVERAGES</a></li>
+			<li><a id="chicken">CHICKEN BUCKETS</a></li>
+			<li><a  id="launch"> NEW LAUNCH</a></li>
+			<li><a id="biryani">BIRYANI BUCKETS</a></li>
+			<li><a id="box_meal">BOX MEALS</a></li>
+			<li><a id="burger_sidebar">BURGERS</a></li>
+			<li><a id="stayhome">STAY HOME SPECIALS</a></li>
+			<li><a id="snacks">SNACKS</a></li>
+			<li><a id="beverage">BEVERAGES</a></li>
 		</ul>
 	
 		</div>
@@ -99,6 +99,7 @@
     document.getElementById("navbar").innerHTML=navbar()
 </script>
 <script src="./scripts/menu.mjs" type="module"></script>
+
 <script src="./scripts/navbar.js"></script>
 <script>
 let tomenu=()=>{
@@ -108,4 +109,154 @@ let tomenu=()=>{
 let todeal=()=>{
 	window.location.href="deals.html"
 }
+
+
+window.addEventListener("scroll",function(){
+	let scroll=window.scrollY;
+	chicken_bucket=document.getElementById("chicken")
+	launch_new=document.getElementById("launch")
+	biryani_bucket=document.getElementById("biryani")
+	box_meals=document.getElementById("box_meal")
+	burger_bucket=document.getElementById("burger_sidebar")
+	home=document.getElementById("stayhome")
+	snack_bucket=document.getElementById("snacks")
+	beverage_bucket=document.getElementById("beverage")
+	
+	if(window.innerWidth>1023){
+	if(scroll>25){
+		chicken_bucket.style.fontWeight="bolder"
+		chicken_bucket.style.fontSize="18px"
+		launch_new.style.fontWeight="500"
+		launch_new.style.fontSize="16px"
+	}
+	if(scroll>3200){
+		chicken_bucket.style.fontWeight="500"
+		chicken_bucket.style.fontSize="16px"
+		launch_new.style.fontWeight="bolder"
+		launch_new.style.fontSize="18px"
+		biryani_bucket.style.fontWeight="500"
+		biryani_bucket.style.fontSize="16px"
+	}
+	if(scroll>6700){
+		biryani_bucket.style.fontWeight="bolder"
+		biryani_bucket.style.fontSize="18px"
+		launch_new.style.fontWeight="500"
+		launch_new.style.fontSize="16px"
+		box_meals.style.fontWeight="500"
+		box_meals.style.fontSize="16px"
+	}
+	if(scroll>8895){
+		box_meals.style.fontWeight="bolder"
+		box_meals.style.fontSize="18px"
+		biryani_bucket.style.fontWeight="500"
+		biryani_bucket.style.fontSize="16px"
+		burger_bucket.style.fontWeight="500"
+		burger_bucket.style.fontSize="16px"
+	}
+	if(scroll>10101){
+		burger_bucket.style.fontWeight="bolder"
+		burger_bucket.style.fontSize="18px"
+		box_meals.style.fontWeight="500"
+		box_meals.style.fontSize="16px"
+		home.style.fontWeight="500"
+		home.style.fontSize="16px"
+	}
+	if(scroll>12380){
+		burger_bucket.style.fontWeight="500"
+		burger_bucket.style.fontSize="16px"
+		home.style.fontWeight="bolder"
+		home.style.fontSize="18px"
+		snack_bucket.style.fontWeight="500"
+		snack_bucket.style.fontSize="16px"
+	}
+	if(scroll>14161){
+		home.style.fontWeight="500"
+		home.style.fontSize="16px"
+		snack_bucket.style.fontWeight="bolder"
+		snack_bucket.style.fontSize="18px"
+		beverage_bucket.style.fontWeight="500"
+		beverage_bucket.style.fontSize="16px"
+	}
+	if(scroll>19743){
+		beverage_bucket.style.fontWeight="bolder"
+		beverage_bucket.style.fontSize="18px"
+		snack_bucket.style.fontWeight="500"
+		snack_bucket.style.fontSize="16px"
+	}
+	else if(scroll<25){
+		launch_new.style.fontWeight="500"
+		launch_new.style.fontSize="16px"
+		chicken_bucket.style.fontWeight="500"
+		chicken_bucket.style.fontSize="16px"
+	}
+}
+else{
+	if(scroll>25){
+		chicken_bucket.style.fontWeight="bolder"
+		chicken_bucket.style.fontColor="18px"
+		launch_new.style.fontWeight="500"
+		launch_new.style.fontSize="16px"
+	}
+	if(scroll>720){
+		chicken_bucket.style.fontWeight="500"
+		chicken_bucket.style.fontSize="16px"
+		launch_new.style.fontWeight="bolder"
+		launch_new.style.fontSize="18px"
+		biryani_bucket.style.fontWeight="500"
+		biryani_bucket.style.fontSize="16px"
+	}
+	if(scroll>5453){
+		biryani_bucket.style.fontWeight="bolder"
+		biryani_bucket.style.fontSize="18px"
+		launch_new.style.fontWeight="500"
+		launch_new.style.fontSize="16px"
+		box_meals.style.fontWeight="500"
+		box_meals.style.fontSize="16px"
+	}
+	if(scroll>8638){
+		box_meals.style.fontWeight="bolder"
+		box_meals.style.fontSize="18px"
+		biryani_bucket.style.fontWeight="500"
+		biryani_bucket.style.fontSize="16px"
+		burger_bucket.style.fontWeight="500"
+		burger_bucket.style.fontSize="16px"
+	}
+	if(scroll>10044){
+		burger_bucket.style.fontWeight="bolder"
+		burger_bucket.style.fontSize="18px"
+		box_meals.style.fontWeight="500"
+		box_meals.style.fontSize="16px"
+		home.style.fontWeight="500"
+		home.style.fontSize="16px"
+	}
+	if(scroll>12722){
+		burger_bucket.style.fontWeight="500"
+		burger_bucket.style.fontSize="16px"
+		home.style.fontWeight="bolder"
+		home.style.fontSize="18px"
+		snack_bucket.style.fontWeight="500"
+		snack_bucket.style.fontSize="16px"
+	}
+	if(scroll>15502){
+		home.style.fontWeight="500"
+		home.style.fontSize="16px"
+		snack_bucket.style.fontWeight="bolder"
+		snack_bucket.style.fontSize="18px"
+		beverage_bucket.style.fontWeight="500"
+		beverage_bucket.style.fontSize="16px"
+	}
+	if(scroll>22800){
+		beverage_bucket.style.fontWeight="bolder"
+		beverage_bucket.style.fontSize="18px"
+		snack_bucket.style.fontWeight="500"
+		snack_bucket.style.fontSize="16px"
+	}
+	else if(scroll<25){
+		launch_new.style.fontWeight="500"
+		launch_new.style.fontSize="16px"
+		chicken_bucket.style.fontWeight="500"
+		chicken_bucket.style.fontSize="16px"
+	}
+}
+})
 </script>

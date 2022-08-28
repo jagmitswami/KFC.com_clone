@@ -46,7 +46,7 @@ function navbar(){
     <span>Sign In</span>
 </a>
 <a >
-    <span>₹0</span>
+    <span>₹<span id="cost_of_cart">0</span></span>
     <div id="cart_cnt">0</div>
     <img src="https://images.ctfassets.net/wtodlh47qxpt/6qtBVFuno7pdwOQ9RIvYm9/d13e9b7242980972cf49beddde2cc295/bucket_cart_icon.svg" id="cart_svg" >
 </a>

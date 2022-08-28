@@ -13,4 +13,28 @@ function openNav() {
     document.getElementById("sidebar").style.zIndex="56"
 
   }
+  
+   let getcartdata=()=>{
+    let currentdata=JSON.parse(localStorage.getItem("cart"))||[]
+    document.getElementById("cart_cnt").innerText=currentdata.length
+    let sum=0
+    currentdata.forEach((ele) => {
+      sum+=Number(ele.price)
+    });
+
+    document.getElementById("cost_of_cart").innerText=Math.floor(sum)
+   }
+
+
+   
+   
+
+   
+    
+   
+    
+   
+   
+  
+
 

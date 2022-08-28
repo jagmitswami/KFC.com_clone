@@ -7,6 +7,24 @@ import newlaunchData from "../data/newlaunch.js";
 import snackData from "../data/snacks.js";
 import stayhomeData from "../data/stayhome.js";
 
+// importing cart function
+
+import { addItemTocart } from "../components/cart.mjs";
+import { getCart } from "../components/cart.mjs";
+let a=getCart()
+let getcartdata=()=>{
+    document.getElementById("cart_cnt").innerText=a.length
+    let sum=0
+    a.forEach((ele) => {
+      sum+=Number(ele.price)
+    });
+
+    document.getElementById("cost_of_cart").innerText=Math.floor(sum)
+}
+getcartdata()
+
+
+
 let chickenCards = document.querySelector(".menu_1_cards");
 let newLaunchCards = document.querySelector(".menu_2_cards");
 let biryaniCards = document.querySelector(".menu_3_cards");
@@ -87,6 +105,7 @@ function appendNormalCards(data, container) {
 		addTocart.append(btnLogo);
 		let topContainer = document.createElement("div");
 		let btnContainer = document.createElement("div");
+		addTocart.onclick = () => addItemTocart(id, menu);
 		topContainer.append(title, desc, mrp, price, type, serve);
 		btnContainer.append(addTocart);
 		card.append(poster, topContainer, btnContainer);
@@ -139,6 +158,7 @@ function appendViewCards(data, container) {
 		let posterContainer = document.createElement("div");
 		let contentContainer = document.createElement("div");
 		let subContainer = document.createElement("div");
+		addTocart.onclick = () => addItemTocart(id, menu);
 
 		posterContainer.append(poster);
 		contentContainer.append(title, desc, mrp, price, type, serve);
@@ -152,3 +172,8 @@ function appendViewCards(data, container) {
 }
 
 
+
+
+
+
+	
