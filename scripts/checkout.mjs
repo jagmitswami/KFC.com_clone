@@ -74,11 +74,13 @@ function checkInput() {
 
 /* Checkout btn functionality */
 
+let orderedItems = JSON.parse(localStorage.getItem('orderedItems')) || [];
 checkoutBtn.onclick = () => {
   alert("Payment Successful.!");
   window.location.href = "index.html";
   let obj_cart = JSON.parse(localStorage.getItem('cart'));
-  localStorage.setItem('orderedItems',JSON.stringify(obj_cart))
+  orderedItems.push(...obj_cart)
+  localStorage.setItem('orderedItems',JSON.stringify(orderedItems))
   localStorage.removeItem('cart');
 };
 
