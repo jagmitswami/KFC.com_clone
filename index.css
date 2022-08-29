@@ -19,10 +19,6 @@ button {
   background-color: rgb(245, 243, 243);
 }
 
-#head_div .order {
-  background-color: black;
-  color: white;
-}
 
 #head_div .welcome,
 #head_div .strips,
@@ -43,18 +39,8 @@ button {
       #fff 16px);
 }
 
-.order {
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.order button {
-  padding: 18px 65px;
-  color: white;
-  background-color: #e4002b;
+#head_div .strips {
+  margin: auto;
 }
 
 .welcome {
@@ -178,15 +164,6 @@ button {
 }
 
 .deals_opt h5 {
-  text-decoration: underline;
-}
-
-.deals_opt button:hover {
-  background-color: black;
-  color: white;
-}
-
-#left_right {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -212,31 +189,45 @@ button {
   margin-top: -5px;
 }
 
+
+
 /* @media screen and (min-width:751px){
     #deals_sub {
         gap: 60px;
       }
 } */
+#cart_cnt {
+  right: 110px;
+}
+
+@media screen and (max-width:1024px) {
+
+  #cart_cnt {
+    right: 20px;
+  }
+
+}
+
+
+
 @media screen and (max-width:750px) {
   .welcome {
     margin-top: 45px;
     font-size: 1em;
   }
 
-  .order {
-    display: block;
-    padding-top: 2px;
-    padding-bottom: 50px;
-  }
-
-  .order h3 {
+  #head_div .welcome {
+    margin-left: 0;
     text-align: center;
   }
 
-  .order button {
-    display: block;
-    margin: auto;
+  #cart_cnt {
+    right: 20px;
   }
+
+
+
+
 
   #cat_heading {
     display: flex;
@@ -280,9 +271,21 @@ button {
   }
 }
 
-@media screen and (max-width:480px) {
+
+
+@media screen and (max-width:590px) {
+  #cart_cnt {
+    right: 12px;
+  }
+}
+
+@media screen and (max-width:500px) {
   #cat {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  #cart_cnt {
+    right: 10px;
   }
 
   #deals_sub {

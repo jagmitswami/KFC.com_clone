@@ -41,14 +41,14 @@ function navbar() {
 </div>
 <div id="nav_cart">
 
-<a >
+<a onclick="signinto()" >
     <img src="https://images.ctfassets.net/wtodlh47qxpt/6bJdGLRkksNvWP4LI9ZiFF/cb89d6393492fd093e0f99980abfa39e/Account_Icon.svg" id="signin_svg" >
     <span id="signin_page">Sign In</span>
 </a>
-<a >
+<a onclick="tocartpage()" >
     <span>₹<span id="cost_of_cart">0</span></span>
     <div id="cart_cnt" onclick="tocartpage()">0</div>
-    <img src="https://images.ctfassets.net/wtodlh47qxpt/6qtBVFuno7pdwOQ9RIvYm9/d13e9b7242980972cf49beddde2cc295/bucket_cart_icon.svg" id="cart_svg" onclick="tocartpage()" >
+    <img src="https://images.ctfassets.net/wtodlh47qxpt/6qtBVFuno7pdwOQ9RIvYm9/d13e9b7242980972cf49beddde2cc295/bucket_cart_icon.svg" id="cart_svg"  >
 </a>
 </div>`;
 }

@@ -24,8 +24,7 @@ let getcartdata = () => {
 };
 
 let tocartpage = () => {
-  let tocart = document.getElementById("cart_svg");
-  tocart.onclick = () => (window.location.href = "cart.html");
+  window.location.href = "cart.html";
 };
 let toindex = () => {
   let tocart = document.getElementById("signin_svg");
@@ -34,8 +33,9 @@ let toindex = () => {
   tocart.onclick = () => (window.location.href = "index.html");
 };
 let signinto = () => {
-  let tocart = document.getElementById("signin_page");
-  tocart.onclick = () => (window.location.href = "signin.html");
+  // console.log("calling signin");
+
+  window.location.href = "signin.html";
 };
 let tomenu = () => {
   window.location.href = "menu.html";

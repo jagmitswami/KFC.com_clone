@@ -7,6 +7,8 @@ body {
 
 .page_heading {
 	padding: 0px 20px;
+	margin-top: 70px;
+
 }
 
 .page_heading>img {
@@ -79,6 +81,12 @@ body {
 	padding: 14px 20px;
 	background-color: inherit;
 	border-radius: 25px;
+
+}
+
+#add_more:hover {
+	color: white;
+	background-color: black;
 }
 
 #addon_container {

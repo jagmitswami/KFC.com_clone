@@ -24,9 +24,11 @@
   padding-bottom: 15px;
   padding-top: 15px;
   position: fixed;
+  top: 0;
   z-index: 2;
   font-size: 14px;
   margin-top: -10px;
+  border-bottom: 1px solid #80808091;
 }
 
 #nav_cart {
@@ -56,7 +58,7 @@
 #cart_cnt {
   position: absolute;
   top: 53%;
-  right: 16%;
+  right: 95px;
   transform: translate(-50%, -50%);
   text-align: center;
   color: black;
@@ -66,7 +68,6 @@
 #nav_cart>a {
   cursor: pointer;
   display: flex;
-  justify-content: right;
 }
 
 #nav_cart>a:nth-child(2) {
@@ -79,7 +80,6 @@
 
 #nav_cart>a:nth-child(1) {
   border-right: #e3e3e3 solid 1px;
-  margin-right: -120px;
 }
 
 #cart_svg {
@@ -140,6 +140,8 @@
   }
 
   #nav_cart>a:nth-child(2) {
+    display: flex;
+    justify-content: right;
     margin-right: 20px;
     padding-right: 0px;
   }

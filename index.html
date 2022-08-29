@@ -6,24 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  <link rel="stylesheet" href="index.css" />
   <link rel="stylesheet" href="./styles/navbar.css">
+  <link rel="stylesheet" href="index.css" />
   <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="stylesheet" href="./styles/order.css">
+
 </head>
 
 <body>
   <div id="navbar"></div>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
   <div id="head_div">
-    <div class="order">
-      <h3>LET'S ORDER FOR DELIVERY, PICK UP, OR DINE-IN</h3>
-      <button><b>Start Order</b></button>
-    </div>
-    <div>
+
+    <div id="for_order">
       <img
         src="https://images.ctfassets.net/wtodlh47qxpt/4gztBB8yAvtp6jV7JAuLD/093fddbb77a78a44a4d3d5e066c592de/KFC_Peri_Peri_Banner__1440x396px.jpg?w=1366&fit=fill&fm=webp"
         alt="" />
@@ -114,16 +108,24 @@
   import navbar from './components/navbarimport.js'
   document.getElementById("navbar").innerHTML = navbar()
 </script>
-<script type="module">
+<!-- <script type="module">
   import footer from './components/footerimport.js'
   document.getElementById("footer").innerHTML = footer()
-</script>
+</script> -->
 <script src="./scripts/navbar.js" defer></script>
 <script type="module">
   import getFooter from "./components/footer.js"
   let footer = document.getElementById("footer");
   footer.innerHTML = getFooter();
 
+</script>
 
+<script type="module" defer>
 
+  import getOrderMenu from "./components/order.js"
+  let forOrder = document.getElementById("for_order");
+  let head = document.getElementById("head_div");
+  let span = document.createElement("span");
+  span.innerHTML = getOrderMenu();
+  head.insertBefore(span, forOrder);
 </script>
