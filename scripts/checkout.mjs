@@ -77,6 +77,9 @@ function checkInput() {
 checkoutBtn.onclick = () => {
   alert("Payment Successful.!");
   window.location.href = "index.html";
+  let obj_cart = JSON.parse(localStorage.getItem('cart'));
+  localStorage.setItem('orderedItems',JSON.stringify(obj_cart))
+  localStorage.removeItem('cart');
 };
 
 /* logoclick redirect */

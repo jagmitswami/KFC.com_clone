@@ -106,3 +106,21 @@ if (x.matches) {
 document.getElementById('view_all_deals').addEventListener('click',function(){
     window.location.href = './deals.html';
 });
+
+let forOrder = document.getElementById('for_order');
+forOrder.addEventListener('click',function(){
+  window.location.href = 'menu.html';
+});
+
+let catProd = document.querySelectorAll('.cat_prod');
+catProd.forEach((e) => {
+  e.addEventListener('click',function(){
+    window.location.href = 'menu.html';
+  });
+});
+
+// let orderBtn = document.querySelector('.order>div');
+// orderBtn.addEventListener('click',function(){
+//   window.location.href = 'menu.html';
+// });
+
