@@ -43,7 +43,7 @@ function navbar() {
 
 <a onclick="signinto()" >
     <img src="https://images.ctfassets.net/wtodlh47qxpt/6bJdGLRkksNvWP4LI9ZiFF/cb89d6393492fd093e0f99980abfa39e/Account_Icon.svg" id="signin_svg" >
-    <span id="signin_page">Sign In</span>
+    <span id="signin_page"></span>
 </a>
 <a onclick="tocartpage()" >
     <span>₹<span id="cost_of_cart">0</span></span>

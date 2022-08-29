@@ -1,3 +1,5 @@
+let isLoggedIn = localStorage.getItem("isLoggedIn") || false;
+
 function openNav() {
   document.getElementById("mySidebar").style.width = "100%";
   document.getElementById("burger").style.marginLeft = "250px";
@@ -33,9 +35,11 @@ let toindex = () => {
   tocart.onclick = () => (window.location.href = "index.html");
 };
 let signinto = () => {
-  // console.log("calling signin");
-
-  window.location.href = "signin.html";
+  if (isLoggedIn == "true") {
+    window.location.href = "account.html";
+  } else {
+    window.location.href = "signin.html";
+  }
 };
 let tomenu = () => {
   window.location.href = "menu.html";
@@ -44,5 +48,12 @@ let tomenu = () => {
 let todeal = () => {
   window.location.href = "deals.html";
 };
+
+if (isLoggedIn == "true") {
+
+  document.getElementById("signin_page").innerText = "Account";
+} else {
+  document.getElementById("signin_page").innerText = "Sign In";
+}
 
 getcartdata();

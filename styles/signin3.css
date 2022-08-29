@@ -1,0 +1,53 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+    width: 600px;
+    margin: auto;
+  }
+  h3{
+    margin-top: 30px;
+    font-size: 1.3em;
+    color: rgb(104, 102, 102);
+  }
+  img{
+    margin-top: 50px;
+  }
+  h2{
+    font-size: 1.3em;
+    margin-top: 70px;
+  }
+  input{
+    width: 570px;
+    border: 1px solid black;
+    margin-top: 20px;
+    padding: 15px 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    margin-bottom: 30px;
+  }
+  p{
+    font-size: 1.2em;
+    margin-left: 10px;
+    margin-top: 60px;
+  }
+  a{
+    color: black;
+  }
+  button{
+    margin-top: 60px;
+    padding: 20px 30px;
+    border: 0px;
+    background-color: black;
+    color: white;
+    width: 580px;
+    border-radius: 40px;
+  }
+  button:hover{
+    background-color: aquamarine;
+    color: black;
+  }
+
