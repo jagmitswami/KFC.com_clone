@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles/navbar.css" />
-    <link rel="stylesheet" href="account.css" />
-    <link rel="stylesheet" href="./styles/footer.css">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="https://online.kfc.co.in/favicon.ico" type="image/x-icon">
+
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles/navbar.css" />
+  <link rel="stylesheet" href="account.css" />
+  <link rel="stylesheet" href="./styles/footer.css">
   <link rel="stylesheet" href="./styles/order.css">
-  </head>
-  <body>
-    <div id="navbar"></div>
-    <div id='head_div'></div>
-    <div id="acc_container">
-      <div class="strips"></div>
-      <h1>
-        GOOD EVENING <br />
-        <span id="name"></span>
-      </h1>
-        <div class="dropdown">
-          <button class="dropbtn">Order History ⬇</button>
-          <div class="dropdown-content"></div>
-        </div>
-      <button id="signOut">Sign Out</button>
+</head>
+
+<body>
+  <div id="navbar"></div>
+  <div id='head_div'></div>
+  <div id="acc_container">
+    <div class="strips"></div>
+    <h1>
+      GOOD EVENING <br />
+      <span id="name"></span>
+    </h1>
+    <div class="dropdown">
+      <button class="dropbtn">Order History ⬇</button>
+      <div class="dropdown-content"></div>
     </div>
-    <div id="footer"></div>
-  </body>
+    <button id="signOut">Sign Out</button>
+  </div>
+  <div id="footer"></div>
+</body>
+
 </html>
 <script type="module" defer>
   import navbar from "./components/navbarimport.js";
