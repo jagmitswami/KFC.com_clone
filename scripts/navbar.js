@@ -2,16 +2,18 @@ let isLoggedIn = localStorage.getItem("isLoggedIn") || false;
 
 function openNav() {
   document.getElementById("mySidebar").style.width = "100%";
-  document.getElementById("burger").style.marginLeft = "250px";
   document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("sidebar").style.zIndex = "-23";
 }
+
+window.onresize = () => {
+  if (window.innerWidth > 1023) {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+};
 
 function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("burger").style.marginLeft = "0";
   document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("sidebar").style.zIndex = "56";
 }
 
 let getcartdata = () => {
@@ -50,7 +52,6 @@ let todeal = () => {
 };
 
 if (isLoggedIn == "true") {
-
   document.getElementById("signin_page").innerText = "Account";
 } else {
   document.getElementById("signin_page").innerText = "Sign In";
