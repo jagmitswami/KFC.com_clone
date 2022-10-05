@@ -8,23 +8,24 @@
 	<link rel="shortcut icon" href="https://online.kfc.co.in/favicon.ico" type="image/x-icon">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
-	<link rel="stylesheet" href="./styles/footer.css">
+	<link rel="stylesheet" href="./styles/menu.css" />
 	<link rel="stylesheet" href="./styles/navbar.css">
 	<link rel="stylesheet" href="./styles/sidebar.css">
-	<link rel="stylesheet" href="./styles/menu.css" />
+	<link rel="stylesheet" href="./styles/footer.css">
 
 	<title>KFC Menu Prices | KFC Menu Deals, Offers &amp; Exclusives</title>
 </head>
 
 <body>
-	<div id="navbar"></div>
-	<section>
+	<div id="navigationBar"></div>
+	<!-- <section class=""> 
 		<div id="searchbar_container">
 			<span><i class="bi bi-search"></i></span>
 			<input type="text" id="menu_search" />
 			<span><i class=" medium bi bi-x-circle" id="clear_search"></i></span>
 		</div>
-	</section>
+	</section> -->
+
 
 	<a href="#main" id="go_to_top_link">
 		<div id="go_to_top"><i class="bi bi-chevron-right top_icon"></i></div>
@@ -101,20 +102,28 @@
 	</div>
 	<div id="footer"></div>
 
+
 </body>
 
 </html>
+
+
 <script type="module">
 	import navbar from './components/navbarimport.js'
-	document.getElementById("navbar").innerHTML = navbar()
+	document.getElementById("navigationBar").innerHTML = navbar()
 </script>
 <script src="./scripts/menu.mjs" type="module"></script>
-
 <script src="./scripts/navbar.js" defer></script>
+<script type="module">
+	import getFooter from "./components/footer.js"
+	let footer = document.getElementById("footer");
+	// footer.innerHTML = getFooter();
+</script>
+
+
+
+<!-- 
 <script>
-
-
-
 	window.addEventListener("scroll", function () {
 		let scroll = window.scrollY;
 		chicken_bucket = document.getElementById("chicken")
@@ -263,10 +272,4 @@
 			}
 		}
 	})
-</script>
-
-<script type="module">
-	import getFooter from "./components/footer.js"
-	let footer = document.getElementById("footer");
-	footer.innerHTML = getFooter();
-</script>
+</script> -->

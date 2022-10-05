@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <div id="navbar"></div>
+  <div id="navigationBar"></div>
   <div id="topdiv">
     <div id="one">
       <h3>LET'S ORDER FOR DELIVERY, PICK UP, OR DINE-IN</h3>
@@ -144,15 +144,13 @@
 </script>
 <script type="module">
   import navbar from "./components/navbarimport.js"
-  let navBar = document.getElementById("navbar")
+  let navBar = document.getElementById("navigationBar")
   navBar.innerHTML = navbar();
 </script>
 <script src="./scripts/navbar.js" defer></script>
 <script type="module" defer>
   import getOrderMenu from "./components/order.js"
   let forOrder = document.getElementById("one");
-  // let head = document.getElementById("head_div");
-  // let span = document.createElement("span");
-  // head.insertBefore(span, forOrder);
+
   one.innerHTML = getOrderMenu();
 </script>
