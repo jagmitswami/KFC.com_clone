@@ -1,123 +1,60 @@
-@import url(//db.onlinewebfonts.com/c/9a835ecd5504d7ec84ad5fa704987c94?family=National+2);
-
-@font-face {
-  font-family: "National 2";
-  src: url("//db.onlinewebfonts.com/t/9a835ecd5504d7ec84ad5fa704987c94.eot");
-  src: url("//db.onlinewebfonts.com/t/9a835ecd5504d7ec84ad5fa704987c94.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9a835ecd5504d7ec84ad5fa704987c94.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9a835ecd5504d7ec84ad5fa704987c94.woff") format("woff"), url("//db.onlinewebfonts.com/t/9a835ecd5504d7ec84ad5fa704987c94.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9a835ecd5504d7ec84ad5fa704987c94.svg#National 2") format("svg");
+body {
+  margin: 0;
+  padding: 0;
 }
 
-
-/* body{
-    padding: 0px ;
-    margin: 0px;
-} */
-#navbar {
-  color: #202124;
-  background-color: white;
-  width: 100%;
+#navigationBar {
   display: flex;
-  justify-content: space-between;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-  align-items: center;
-  padding-bottom: 15px;
-  padding-top: 15px;
+  /* justify-content: center; */
+  width: 100vw;
+  box-sizing: border-box;
+  margin: auto;
+  justify-content: center;
+  background-color: white;
   position: fixed;
   top: 0;
-  z-index: 2;
-  font-size: 14px;
-  margin-top: -10px;
-  border-bottom: 1px solid #80808091;
+  z-index: 1;
+}
+
+#navbar {
+  width: 100vw;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.logoContainer {
+  margin: auto;
+}
+
+.totalContainer {
+  display: flex;
+  padding: 0px 10px;
+  align-items: center;
+}
+
+.totalContainer > div {
+  padding: 0px 10px;
+}
+
+.totalContainer > div:nth-of-type(2) {
+  position: relative;
+  left: 45px;
+}
+
+.totalContainer img {
+  width: 40px;
 }
 
 #nav_cart {
-  display: flex;
-  padding-top: 4px;
-  font-family: "National 2";
-  src: url("//db.onlinewebfonts.com/t/9a835ecd5504d7ec84ad5fa704987c94.eot");
-  font-weight: 500;
-}
-
-#nav_cart>a {
-  white-space: pre;
-  font-family: "National 2";
-  src: url("//db.onlinewebfonts.com/t/9a835ecd5504d7ec84ad5fa704987c94.eot");
-  padding: 0 15px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  color: #202124;
-  text-decoration: none;
-
-}
-
-#cart_cnt {
-  position: absolute;
-  top: 53%;
-  right: 95px;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: black;
-  font-weight: bold;
-}
-
-#nav_cart>a {
-  cursor: pointer;
-  display: flex;
-}
-
-#nav_cart>a:nth-child(2) {
-  display: flex;
-  position: relative;
-  margin-right: 40%;
-
-
-}
-
-#nav_cart>a:nth-child(1) {
-  border-right: #e3e3e3 solid 1px;
-}
-
-#cart_svg {
-  width: 30%;
-  display: block;
+  display: none;
 }
 
 #nav_titles {
-  padding-top: 4px;
-  font-family: "National 2";
-  font-weight: 500;
-
-}
-
-#nav_titles>button {
-  font-family: "National 2";
-  src: url("//db.onlinewebfonts.com/t/9a835ecd5504d7ec84ad5fa704987c94.eot");
-  all: unset;
-  cursor: pointer;
-  margin-left: 50px;
-  position: relative;
-
-}
-
-#nav_logo {
-  width: 23%;
-  padding-left: 2vw;
-  padding-top: 1vw;
-  cursor: pointer;
-}
-
-
-#signin_svg {
-  padding-right: 13px;
-  cursor: pointer;
-}
-
-#burger {
   display: none;
 }
 
@@ -126,53 +63,7 @@
 }
 
 /* All media queries are written here */
-@media screen and (min-width:320px) and (max-width:1023px) {
-  #navbar {
-    margin-bottom: 0px;
-  }
-
-  #nav_titles {
-    display: none;
-  }
-
-  #nav_cart>a:nth-child(1) {
-    display: none;
-  }
-
-  #nav_cart>a:nth-child(2) {
-    display: flex;
-    justify-content: right;
-    margin-right: 20px;
-    padding-right: 0px;
-  }
-
-  #cart_svg {
-    width: 15%
-  }
-
-  #cart_cnt {
-    position: absolute;
-    top: 53%;
-    right: 4%;
-    transform: translate(-50%, -50%);
-  }
-
-  #navbar {
-    padding: 20px 0px;
-  }
-
-  #nav_logo {
-    padding-left: 30vw;
-    padding-top: 0px;
-  }
-
-  #burger {
-    display: block;
-    padding: 0 2%;
-    transition: margin-left .5s;
-    padding: 20px;
-  }
-
+@media screen and (min-width: 320px) and (max-width: 1023px) {
   .sidebar {
     height: 100%;
     width: 0;
@@ -182,13 +73,10 @@
     left: 0;
     background-color: white;
     overflow-x: hidden;
-    padding-top: 60px;
     transition: 0.5s;
   }
 
   .sidebar a {
-    font-family: "National 2";
-    src: url("//db.onlinewebfonts.com/t/9a835ecd5504d7ec84ad5fa704987c94.eot");
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -202,7 +90,6 @@
   }
 
   .sidebar .closebtn {
-    position: absolute;
     top: 0;
     left: 5px;
     font-size: 36px;
@@ -219,36 +106,40 @@
     list-style: none;
     align-items: center;
     font-size: 14px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #8080804d;
+  }
+
+  .cartLengthContainer {
+    display: flex;
+    align-items: center;
+    max-width: max-content;
   }
 
   #sidecart_cnt {
-    position: absolute;
-    top: 5%;
-    right: 4%;
-    z-index: 25;
-    transform: translate(-50%, -50%);
     text-align: center;
     color: black;
     font-weight: bold;
   }
 
   #sidecart_svg {
-    width: 5%;
-    position: absolute;
-    top: 5%;
-    right: -.4%;
-    transform: translate(-50%, -50%);
+    width: 50px;
+    position: relative;
+    left: -29px;
+    z-index: -1;
+
     text-align: center;
     color: black;
     font-weight: bold;
   }
 
   #sidebar_logo {
-    width: 5%;
-    position: absolute;
     top: 3.9%;
     right: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
   }
 
@@ -257,11 +148,8 @@
   }
 
   .menu {
-
     width: 90%;
     display: flex;
-    font-family: "National 2";
-    src: url("//db.onlinewebfonts.com/t/9a835ecd5504d7ec84ad5fa704987c94.eot");
     align-content: center;
     background-color: #f8f7f5;
     justify-content: space-between;
@@ -269,11 +157,11 @@
     margin-top: 40px;
   }
 
-  .menu>img {
+  .menu > img {
     width: 40%;
   }
 
-  .menu>div {
+  .menu > div {
     margin-top: 15%;
     margin-left: 5%;
   }
@@ -286,11 +174,11 @@
     margin-top: 40px;
   }
 
-  .data_menu>div:first-child {
+  .data_menu > div:first-child {
     padding-top: 60px;
   }
 
-  .data_menu>div {
+  .data_menu > div {
     margin-top: 15%;
     margin-left: 7%;
   }
@@ -300,7 +188,59 @@
   }
 
   #letscookin {
+    margin-top: 80px;
     line-height: 30px;
+    color: #202124;
+    font-weight: bolder;
+  }
+}
+
+/* Develop */
+
+@media all and (min-width: 1024px) {
+  #navbar {
+    max-width: 85%;
+    margin: auto;
   }
 
+  #burger,
+  #mySidebar {
+    display: none;
+  }
+
+  .logoContainer {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+  }
+
+  #nav_titles {
+    display: block;
+  }
+
+  #nav_titles > button {
+    margin-left: 50px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-weight: 600;
+  }
+
+  #nav_cart {
+    display: block;
+    padding: 0px 10px;
+  }
+
+  #cost_of_cart {
+    min-width: 150px;
+  }
+
+  .signinLink {
+    display: flex;
+    align-items: center;
+  }
+
+  .signinLink > div {
+    padding: 0px 10px;
+  }
 }
