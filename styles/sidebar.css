@@ -1,148 +1,135 @@
-@import url(//db.onlinewebfonts.com/c/9a835ecd5504d7ec84ad5fa704987c94?family=National+2);
-
-@font-face {
-    font-family: "National 2";
-    src: url("//db.onlinewebfonts.com/t/9a835ecd5504d7ec84ad5fa704987c94.eot");
-    src: url("//db.onlinewebfonts.com/t/9a835ecd5504d7ec84ad5fa704987c94.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9a835ecd5504d7ec84ad5fa704987c94.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9a835ecd5504d7ec84ad5fa704987c94.woff") format("woff"), url("//db.onlinewebfonts.com/t/9a835ecd5504d7ec84ad5fa704987c94.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9a835ecd5504d7ec84ad5fa704987c94.svg#National 2") format("svg");
-}
-
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    padding: 0px 78.05px;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  /* padding: 0px 78.05px; */
 }
 
-a {
-
-    font-family: Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -.1px;
-    color: #494949;
-    text-decoration: none;
-    white-space: nowrap;
-
+#sidebar a {
+  font-family: Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+  color: #494949;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
-li:first-child {
-    padding: 0.225rem 0 1.19rem;
+#sidebar li:first-child {
+  padding: 0.225rem 0 1.19rem;
 }
 
-ul {
-    padding-left: 0;
-    list-style: none;
+#sidebar ul {
+  padding-left: 0;
+  list-style: none;
 }
 
 li {
-    list-style: none;
-    padding: 0 0 1.19rem;
+  list-style: none;
+  padding: 0 0 1.19rem;
 }
 
 #title {
-    font-family: "National 2";
-    src: url("//db.onlinewebfonts.com/t/9a835ecd5504d7ec84ad5fa704987c94.eot");
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 30px;
-    font-stretch: condensed;
-    margin-top: 30px;
-    margin-bottom: -13px;
-    display: block;
-
-
+  font-family: "National 2";
+  src: url("//db.onlinewebfonts.com/t/9a835ecd5504d7ec84ad5fa704987c94.eot");
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  font-stretch: condensed;
+  margin-top: 30px;
+  margin-bottom: -13px;
+  display: block;
 }
 
 #sidebar {
-    height: 100vh;
-    width: 50vw;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 92px;
-    margin-left: .8%;
-    display: block;
+  height: 100vh;
+  width: 50vw;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 92px;
+  margin-left: 0.8%;
+  display: block;
 }
 
-#sidebar>img {
-    height: 2vw;
-    width: 4vw;
-
+#sidebar > img {
+  height: 2vw;
+  width: 4vw;
 }
 
 /*media queri
 320 to 1024 according to Site*/
-@media screen and (min-width:320px) and (max-width:1024px) {
-    #data {
-        display: inline;
-    }
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  #data {
+    display: inline;
+  }
 
-    #sidebar {
-        width: 100%;
-        height: 52px;
-        top: 50px;
+  #sidebar {
+    width: 100%;
+    height: 52px;
+    top: 50px;
+  }
 
-    }
+  #logo {
+    display: none;
+  }
 
-    #logo {
-        display: none;
-    }
+  #title {
+    display: none;
+  }
 
-    #title {
-        display: none;
-    }
+  ul {
+    padding-left: 0;
+    display: flex;
+    margin-top: 6px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
 
-    ul {
-        padding-left: 0;
-        display: flex;
-        margin-top: 6px;
-        overflow-x: auto;
-        overflow-y: hidden;
-        padding-bottom: 0;
-        margin-bottom: 0;
-    }
+  #sidebar {
+    flex-wrap: nowrap !important;
+    margin-left: 0 !important;
+    border-bottom: 1px solid #dbdbdb;
+    overflow-y: hidden;
+    z-index: 56;
+    width: 100%;
+    background: #fff;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
 
-    #sidebar {
-        flex-wrap: nowrap !important;
-        margin-left: 0 !important;
-        border-bottom: 1px solid #dbdbdb;
-        overflow-y: hidden;
-        z-index: 56;
-        width: 100%;
-        background: #fff;
-        margin-top: 0;
-        margin-bottom: 5px;
-    }
+  li {
+    display: flex;
+    margin-left: 20px;
+    height: 10px;
+    padding: 0px;
+  }
 
-    li {
-        display: flex;
-        margin-left: 20px;
-        height: 10px;
-        padding: 0px;
+  a {
+    color: #494949;
+    opacity: 0.5;
+    display: inline-flex;
+    width: -webkit-max-content;
+    width: max-content;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+  }
 
-    }
-
-    a {
-        color: #494949;
-        opacity: .5;
-        display: inline-flex;
-        width: -webkit-max-content;
-        width: max-content;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 15px;
-
-    }
-
-    body {
-        padding: 0px;
-        margin: 0px;
-        margin: auto;
-    }
-
+  body {
+    padding: 0px;
+    margin: 0px;
+    margin: auto;
+  }
 }
