@@ -5,15 +5,15 @@ body {
 
 #navigationBar {
   display: flex;
-  /* justify-content: center; */
+  min-height: 80px;
   width: 100vw;
   box-sizing: border-box;
   margin: auto;
   justify-content: center;
-  background-color: white;
   position: fixed;
-  top: 0;
-  z-index: 1;
+  top: 0px;
+  z-index: 5;
+  background-color: #fff;
 }
 
 #navbar {
@@ -25,6 +25,9 @@ body {
   justify-content: space-between;
   align-items: center;
   font-weight: 600;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
 }
 
 .logoContainer {
@@ -43,11 +46,14 @@ body {
 
 .totalContainer > div:nth-of-type(2) {
   position: relative;
-  left: 45px;
+  left: 35px;
+  /* top: -2px; */
+  font-size: 0.8rem;
+  padding: 4px;
 }
 
 .totalContainer img {
-  width: 40px;
+  width: 37px;
 }
 
 #nav_cart {
@@ -62,13 +68,18 @@ body {
   display: none;
 }
 
+#data {
+  position: relative;
+  top: 0;
+}
+
 /* All media queries are written here */
 @media screen and (min-width: 320px) and (max-width: 1023px) {
   .sidebar {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     top: 0;
     left: 0;
     background-color: white;
@@ -108,7 +119,7 @@ body {
     font-size: 14px;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 3;
     background-color: white;
     padding-bottom: 20px;
     border-bottom: 1px solid #8080804d;
@@ -242,5 +253,8 @@ body {
 
   .signinLink > div {
     padding: 0px 10px;
+  }
+  .signinLink > div:nth-of-type(1) {
+    margin-bottom: -10px;
   }
 }
