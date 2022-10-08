@@ -9,17 +9,36 @@
 
 	<link rel="stylesheet" href="./styles/cart.css" />
 	<link rel="stylesheet" href="./styles/navbar.css" />
+	<link rel="stylesheet" href="./styles/footer.css" />
 	<title>KFC Cart</title>
 </head>
 
 <body>
 
+
 	<div id="navigationBar"></div>
+	<div class="main-container">
+
 	<div class="page_heading">
 		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAeCAYAAAB5c901AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABNSURBVHgB7c9BDQAgAMPAgQ4c4F8KDvABFuBHSe+9LGmZ6SsXWkY52b3yW/M5A+kMpDOQzkA6A+kMpDOQzkA6A+kMpDOQzkA6A+kMpNu9MQhKmC+cDgAAAABJRU5ErkJggg=="
 			alt="logo" />
 		<h3>MY CART</h3>
 	</div>
+
+
+	<!-- banner to show when cart is empty -->
+	<div class="empty-cart-container">
+		<div>
+			<h1>YOUR CART IS EMPTY LET'S STATRT AN ORDER.!</h1>
+			<a href="menu.html">
+				<button class="start-order"> Start Order</button>
+			</a>
+		</div>
+		<div >
+			<img class="empty-cart-logo" src="https://online.kfc.co.in/static/media/empty_cart.32f17a45.png" alt="empty_cart_image">
+		</div>
+	</div>
+
 
 	<!-- cart items section start -->
 	<section class="items_container_grid">
@@ -106,6 +125,8 @@
 			</button>
 		</div>
 	</section>
+</div>
+
 
 	<!-- checkout section end -->
 	<!-- faq section start -->
@@ -152,6 +173,10 @@
 	</section>
 
 	<!-- faq section end -->
+
+	<div id="footer">
+
+	</div>
 </body>
 
 </html>
@@ -164,3 +189,8 @@
 
 </script>
 <script src="./scripts/navbar.js" defer></script>
+<script type="module">
+	import getFooter from "./components/footer.js";
+	let footer = document.getElementById("footer");
+	footer.innerHTML = getFooter();
+  </script>
