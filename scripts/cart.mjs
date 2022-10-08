@@ -9,6 +9,8 @@ let cartItemsTotal = document.getElementById("cart_items");
 let removeAll = document.getElementById("remove_all");
 let addMore = document.getElementById("add_more");
 let checkoutBtn = document.getElementById("checkout_btn");
+let cartContainer = document.querySelector(".items_container_grid");
+let emptyCartBanner = document.querySelector(".empty-cart-container");
 
 let rupeeIcon = "&#x20b9";
 let donateAmount = 0;
@@ -32,7 +34,13 @@ checkoutBtn.onclick = () => (window.location.href = "checkout.html");
 /* Render all the elements in cart to page */
 function renderpage() {
   let cart = getCart();
-  console.log(cart);
+  if (!cart.length) {
+    cartContainer.style.display = "none";
+    emptyCartBanner.style.display = "flex";
+  } else {
+    emptyCartBanner.style.display = "none";
+  }
+
   displayCartItems(cart);
   displayTotal(cart, donateAmount);
 }
@@ -106,7 +114,7 @@ function displayTotal(cart, donate = 0) {
     return a + c.count * c.price;
   }, 0);
   subTotalPrice = fixedPoint(subTotalPrice);
-  console.log(subTotalPrice);
+  // console.log(subTotalPrice);
 
   let totalTax = subTotalPrice * 0.05;
   totalTax = fixedPoint(totalTax);
@@ -117,7 +125,7 @@ function displayTotal(cart, donate = 0) {
   cartItemsTotal.innerText =
     cart.length > 1 ? `${cart.length} ITEMS ` : `${cart.length} ITEM `;
 
-  console.log(subTotalPrice, subtotal);
+  // console.log(subTotalPrice, subtotal);
   subtotal.innerHTML = `${rupeeIcon} ${subTotalPrice}`;
   gst.innerHTML = totalTax;
   total.innerHTML = `${rupeeIcon} ${totalAmount}`;
@@ -146,7 +154,7 @@ function modifyMenu(type, id) {
         : menu
     );
   }
-  console.log(cart);
+  // console.log(cart);
   setCart(cart);
   renderpage();
 }
@@ -156,7 +164,7 @@ function modifyMenu(type, id) {
 function removeItem(id) {
   let cart = getCart();
   cart = cart.filter((menu) => menu.id !== id);
-  console.log(cart);
+  // console.log(cart);
   setCart(cart);
   renderpage();
 }
