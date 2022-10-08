@@ -19,7 +19,6 @@ button {
   background-color: rgb(245, 243, 243);
 }
 
-
 #head_div .welcome,
 #head_div .strips,
 #deals .strips {
@@ -32,11 +31,13 @@ button {
   margin-top: -10px;
   width: 45px;
   height: 32px;
-  background: repeating-linear-gradient(90deg,
-      #e4002b,
-      #e4002b 10px,
-      #fff 0,
-      #fff 16px);
+  background: repeating-linear-gradient(
+    90deg,
+    #e4002b,
+    #e4002b 10px,
+    #fff 0,
+    #fff 16px
+  );
 }
 
 #head_div .strips {
@@ -65,11 +66,11 @@ button {
   font-size: 1.8em;
 }
 
-#cat_heading>div:nth-child(1) {
+#cat_heading > div:nth-child(1) {
   width: 600px;
 }
 
-#cat_heading>div:nth-child(2) {
+#cat_heading > div:nth-child(2) {
   width: 100%;
 }
 
@@ -89,6 +90,7 @@ button {
   text-align: center;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
+  cursor: pointer;
 }
 
 #cat img {
@@ -103,7 +105,7 @@ button {
 
 #deals {
   width: 100%;
-  background-color: black;
+  background-color: #202124;
   color: white;
   text-align: center;
   margin-top: 130px;
@@ -111,11 +113,13 @@ button {
 }
 
 #deals .strips {
-  background: repeating-linear-gradient(90deg,
-      #e4002b,
-      #e4002b 10px,
-      black 0,
-      black 16px);
+  background: repeating-linear-gradient(
+    90deg,
+    #e4002b,
+    #e4002b 10px,
+    black 0,
+    black 16px
+  );
 }
 
 #deals_sub_heading {
@@ -132,7 +136,7 @@ button {
   gap: 30px;
 }
 
-#deals_sub>div {
+#deals_sub > div {
   background-color: white;
   color: black;
   border-bottom-left-radius: 6px;
@@ -157,6 +161,7 @@ button {
 
 .deals_opt button {
   padding: 20px 60px;
+  border: 1px solid gray;
 }
 
 #deals_sub_heading h2 {
@@ -203,17 +208,13 @@ button {
   right: 110px;
 }
 
-@media screen and (max-width:1024px) {
-
+@media screen and (max-width: 1024px) {
   #cart_cnt {
     right: 20px;
   }
-
 }
 
-
-
-@media screen and (max-width:750px) {
+@media screen and (max-width: 750px) {
   .welcome {
     margin-top: 45px;
     font-size: 1em;
@@ -227,10 +228,6 @@ button {
   #cart_cnt {
     right: 20px;
   }
-
-
-
-
 
   #cat_heading {
     display: flex;
@@ -269,20 +266,18 @@ button {
     display: none;
   }
 
-  #deals_sub>div {
+  #deals_sub > div {
     width: 300px;
   }
 }
 
-
-
-@media screen and (max-width:590px) {
+@media screen and (max-width: 590px) {
   #cart_cnt {
     right: 12px;
   }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width: 500px) {
   #cat {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -306,7 +301,7 @@ button {
     display: none;
   }
 
-  #deals_sub>div {
+  #deals_sub > div {
     width: 300px;
   }
 }
