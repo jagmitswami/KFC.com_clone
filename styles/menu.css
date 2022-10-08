@@ -31,8 +31,7 @@
 
 #go_to_top i {
   position: relative;
-  left: -7px;
-  top: -18px;
+  /* left: px; */
 }
 
 .top_icon {
