@@ -1,48 +1,46 @@
 .order {
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-top: 75px;
-    background-color: black;
-    color: white;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 75px;
+  background-color: black;
+  color: white;
 }
 
 .order button {
-    padding: 18px 65px;
-    color: white;
-    background-color: #e4002b;
-    border-radius: 40px;
-
+  padding: 18px 65px;
+  color: white;
+  background-color: #e4002b;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
-@media screen and (max-width:750px) {
+@media screen and (max-width: 750px) {
+  .order {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    margin-top: 75px;
+  }
 
+  .order h3 {
+    padding-top: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
 
-    .order {
-        display: block;
-        padding-top: 10px;
-        padding-bottom: 50px;
-        margin-top: 75px;
-    }
-
-    .order h3 {
-        padding-top: 20px;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-    .order button {
-        display: block;
-        margin: auto;
-    }
+  .order button {
+    display: block;
+    margin: auto;
+  }
 }
 
-
-@media screen and (max-width:450px) {
-
-    .order {
-        padding-bottom: 80px;
-    }
+@media screen and (max-width: 450px) {
+  .order {
+    padding-bottom: 80px;
+  }
 }
