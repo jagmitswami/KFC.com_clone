@@ -30,6 +30,10 @@ body {
   z-index: 1;
 }
 
+#navbar div > * {
+  cursor: pointer;
+}
+
 .logoContainer {
   margin: auto;
 }
