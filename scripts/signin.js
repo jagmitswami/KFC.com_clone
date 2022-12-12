@@ -24,7 +24,7 @@ document.querySelector("button").addEventListener("click", function () {
     alert(`Your OTP is ${val}`);
     localStorage.setItem('otp',JSON.stringify(val));
     localStorage.setItem('num',JSON.stringify(num));
-    window.open('signin2.html')
+    window.location.href = 'signin2.html';
   }else{
     alert ('Enter Valid mobile number!');
   }

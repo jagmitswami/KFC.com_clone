@@ -40,6 +40,6 @@ document.querySelector("#resend").addEventListener("click", function () {
       const val = Math.floor(1000 + Math.random() * 9000);
       alert(`Your OTP is ${val}`);
       localStorage.setItem('otp',JSON.stringify(val));
-      window.open('signin2.html')
+      window.location.href = 'signin2.html';
   });
   
